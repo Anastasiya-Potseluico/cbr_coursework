@@ -1,0 +1,8 @@
+<DataBaseConfiguration>
+	<HibernateConfigFile>src/resources/dbresources/hibernate.cfg.xml</HibernateConfigFile>
+	<DescriptionMappingFile>src/resources/dbresources/InterfaceDescription.hbm.xml</DescriptionMappingFile>
+	<DescriptionClassName>InterfaceWidgetRecommender.InterfaceDescription</DescriptionClassName>
+	<SolutionMappingFile>src/resources/dbresources/InterfaceSolution.hbm.xml</SolutionMappingFile>
+	<SolutionClassName>InterfaceWidgetRecommender.InterfaceSolution</SolutionClassName>
+	
+</DataBaseConfiguration>
