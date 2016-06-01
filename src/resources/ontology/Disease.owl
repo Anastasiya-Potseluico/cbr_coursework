@@ -1,0 +1,1197 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease">
+    <Prefix name="" IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/анастасия/ontologies/2016/3/physical_problem</Import>
+    <Import>http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task</Import>
+    <Import>http://www.semanticweb.org/анастасия/ontologies/2016/2/solution</Import>
+    <Declaration>
+        <NamedIndividual IRI="#Attention_Deficit_Hyperactivity_Disorder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDisease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yellow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moderately_Severe_Hearing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dementia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cognition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protanomaly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brain_Tumor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deuteranopia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hemorrhagic_Stroke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/solution#Output_Audio_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Helena_Bowns"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasExtent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Autism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ataxic_Cerebral_Palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deuteranomaly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Full_Deafness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hearing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Interface_For_Task2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TACS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasForbiddenColor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fragile_X_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Low_Vision_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Athetoid_Cerebral_Palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PACS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Totally_Blind_Visual_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Legally_Blind_Visual_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dichromasy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ischemic_Stroke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protanopia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severe_Hearing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Get_Photo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spastic_Cerebral_Palsy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genetic_Disability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Orange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hemiplegetic_Cerebral_Palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monochromasy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_Visible_Disability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Green"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phonophobia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Partially_Sighted_Vision_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vision"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasForbiddenColor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Down_Syndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colorblindness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LACS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProblemsWithInterfaceTask"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chromophobia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Left_Hand_Amputated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phobia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emotional_State"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stroke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hemorrhagic_Stroke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vision_Terms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#POCS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mild_Hearing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_and_Mobility_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Right_Thumb_Amputated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adam_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#After_Viral_Meningit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Epilepsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Profound_Hearing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cerebral_Palsy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disabled_Tactility"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moderate_Hearing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dyslexia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performsTask"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Left_Thumb_Amputated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Muteness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Right_Hand_Amputated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mobility_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhysicalProblem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Traumatic_Brain_Injury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voice_Disability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brain_Injury"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Table_Widget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Interface_For_Task1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Radio_Button"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/task_problem#TaskProblem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Adapted_Interface_For_Task1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasRequirements"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Check_Box"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/task_problem#Can_Push_Button_With_Difficulties"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_List_Widget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/task_problem#Can_Input_Text_With_Difficultiies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Button"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Line_Edit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widgets_For_Text_Insert"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasOutputInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/task_problem#Can_See_Text_With_Difficulties"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Brain_Injury"/>
+        <Class IRI="#Cognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cerebral_Palsy"/>
+        <Class IRI="#Mobility_Impairment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cognition"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Color"/>
+        <Class IRI="#Vision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colorblindness"/>
+        <Class IRI="#Vision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disabled_Tactility"/>
+        <Class IRI="#Physical_and_Mobility_Impairment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emotional_State"/>
+        <Class IRI="#Cognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Genetic_Disability"/>
+        <Class IRI="#Cognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hearing"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hemorrhagic_Stroke"/>
+        <Class IRI="#Brain_Injury"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ischemic_Stroke"/>
+        <Class IRI="#Brain_Injury"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mobility_Impairment"/>
+        <Class IRI="#Physical_and_Mobility_Impairment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non_Visible_Disability"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phobia"/>
+        <Class IRI="#Emotional_State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_and_Mobility_Impairment"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vision"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vision_Terms"/>
+        <Class IRI="#Vision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voice_Disability"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#Adam_Smith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brain_Injury"/>
+        <NamedIndividual IRI="#After_Viral_Meningit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Ataxic_Cerebral_Palsy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Athetoid_Cerebral_Palsy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cognition"/>
+        <NamedIndividual IRI="#Attention_Deficit_Hyperactivity_Disorder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genetic_Disability"/>
+        <NamedIndividual IRI="#Autism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brain_Injury"/>
+        <NamedIndividual IRI="#Brain_Tumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Phobia"/>
+        <NamedIndividual IRI="#Chromophobia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genetic_Disability"/>
+        <NamedIndividual IRI="#Dementia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colorblindness"/>
+        <NamedIndividual IRI="#Deuteranomaly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colorblindness"/>
+        <NamedIndividual IRI="#Deuteranopia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colorblindness"/>
+        <NamedIndividual IRI="#Dichromasy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genetic_Disability"/>
+        <NamedIndividual IRI="#Down_Syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cognition"/>
+        <NamedIndividual IRI="#Dyslexia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Non_Visible_Disability"/>
+        <NamedIndividual IRI="#Epilepsy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genetic_Disability"/>
+        <NamedIndividual IRI="#Fragile_X_syndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hearing"/>
+        <NamedIndividual IRI="#Full_Deafness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#Picture_Instructions"/>
+        <NamedIndividual IRI="#Get_Photo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#Green"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#Helena_Bowns"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Hemiplegetic_Cerebral_Palsy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hemorrhagic_Stroke"/>
+        <NamedIndividual IRI="#Hemorrhagic_Stroke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Interface"/>
+        <NamedIndividual IRI="#Input_Interface_For_Task2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ischemic_Stroke"/>
+        <NamedIndividual IRI="#LACS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Disabled_Tactility"/>
+        <NamedIndividual IRI="#Left_Hand_Amputated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Disabled_Tactility"/>
+        <NamedIndividual IRI="#Left_Thumb_Amputated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vision_Terms"/>
+        <NamedIndividual IRI="#Legally_Blind_Visual_Impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vision_Terms"/>
+        <NamedIndividual IRI="#Low_Vision_Impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hearing"/>
+        <NamedIndividual IRI="#Mild_Hearing_Impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hearing"/>
+        <NamedIndividual IRI="#Moderate_Hearing_Impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hearing"/>
+        <NamedIndividual IRI="#Moderately_Severe_Hearing_Impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colorblindness"/>
+        <NamedIndividual IRI="#Monochromasy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voice_Disability"/>
+        <NamedIndividual IRI="#Muteness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#Orange"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ischemic_Stroke"/>
+        <NamedIndividual IRI="#PACS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ischemic_Stroke"/>
+        <NamedIndividual IRI="#POCS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vision_Terms"/>
+        <NamedIndividual IRI="#Partially_Sighted_Vision_Impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Phobia"/>
+        <NamedIndividual IRI="#Phonophobia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hearing"/>
+        <NamedIndividual IRI="#Profound_Hearing_Impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colorblindness"/>
+        <NamedIndividual IRI="#Protanomaly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colorblindness"/>
+        <NamedIndividual IRI="#Protanopia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#Red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Disabled_Tactility"/>
+        <NamedIndividual IRI="#Right_Hand_Amputated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Disabled_Tactility"/>
+        <NamedIndividual IRI="#Right_Thumb_Amputated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hearing"/>
+        <NamedIndividual IRI="#Severe_Hearing_Impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Spastic_Cerebral_Palsy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hemorrhagic_Stroke"/>
+        <NamedIndividual IRI="#Stroke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ischemic_Stroke"/>
+        <NamedIndividual IRI="#TACS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#Task_On_Interface"/>
+        <NamedIndividual IRI="#Task_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vision_Terms"/>
+        <NamedIndividual IRI="#Totally_Blind_Visual_Impairment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brain_Injury"/>
+        <NamedIndividual IRI="#Traumatic_Brain_Injury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#Yellow"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDisease"/>
+        <NamedIndividual IRI="#Adam_Smith"/>
+        <NamedIndividual IRI="#LACS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#performsTask"/>
+        <NamedIndividual IRI="#Adam_Smith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#Task_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasForbiddenColor"/>
+        <NamedIndividual IRI="#Deuteranomaly"/>
+        <NamedIndividual IRI="#Green"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasForbiddenColor"/>
+        <NamedIndividual IRI="#Deuteranomaly"/>
+        <NamedIndividual IRI="#Orange"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasForbiddenColor"/>
+        <NamedIndividual IRI="#Deuteranomaly"/>
+        <NamedIndividual IRI="#Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasForbiddenColor"/>
+        <NamedIndividual IRI="#Deuteranomaly"/>
+        <NamedIndividual IRI="#Yellow"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasUserActions"/>
+        <NamedIndividual IRI="#Get_Photo"/>
+        <NamedIndividual IRI="#Get_Photo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDisease"/>
+        <NamedIndividual IRI="#Helena_Bowns"/>
+        <NamedIndividual IRI="#Deuteranomaly"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasCommandsForUser"/>
+        <NamedIndividual IRI="#Task_2"/>
+        <NamedIndividual IRI="#Get_Photo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasDefaultInterface"/>
+        <NamedIndividual IRI="#Task_2"/>
+        <NamedIndividual IRI="#Input_Interface_For_Task2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasOutputInstance"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Interface_For_Task1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Adapted_Interface_For_Task1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasDefaultInterface"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#Task_1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Interface_For_Task1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasExtent"/>
+        <NamedIndividual IRI="#Hemorrhagic_Stroke"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">middle</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDisease"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasForbiddenColor"/>
+        <Class IRI="#Colorblindness"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhysicalProblem"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProblemsWithInterfaceTask"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performsTask"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDisease"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasForbiddenColor"/>
+        <Class IRI="#Color"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProblemsWithInterfaceTask"/>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/task_problem#TaskProblem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performsTask"/>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#Task_On_Interface"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasExtent"/>
+        <Class IRI="#Disease"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasForbiddenColor"/>
+        <Class IRI="#Colorblindness"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasExtent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasForbiddenColor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">VisualPerceptionCommandInterfaceProblem</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasPhysicalProblem"/>
+                <Variable IRI="user"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/3/physical_problem#Complexity_of_Visual_Information_Perception"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#performsTask"/>
+                <Variable IRI="user"/>
+                <Variable IRI="task"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasDefaultInterface"/>
+                <Variable IRI="task"/>
+                <Variable IRI="interface"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+                <Variable IRI="interface"/>
+                <Variable IRI="component"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widgets_For_Text_Insert"/>
+                <Variable IRI="component"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasProblemsWithInterfaceTask"/>
+                <Variable IRI="user"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/task_problem#Can_See_Text_With_Difficulties"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">hasInputTextInterfaceTaskProblem</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasPhysicalProblem"/>
+                <Variable IRI="diseasediseaseuser"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/3/physical_problem#Complexity_of_Arm_Control"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#performsTask"/>
+                <Variable IRI="diseasediseaseuser"/>
+                <Variable IRI="diseasediseasetask"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasDefaultInterface"/>
+                <Variable IRI="diseasediseasetask"/>
+                <Variable IRI="diseasediseaseinterface"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+                <Variable IRI="diseasediseaseinterface"/>
+                <Variable IRI="diseasediseasecomponent"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widgets_For_Text_Insert"/>
+                <Variable IRI="diseasediseasecomponent"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasProblemsWithInterfaceTask"/>
+                <Variable IRI="diseasediseaseuser"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/task_problem#Can_Input_Text_With_Difficultiies"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasProblemsWithInterfaceTask"/>
+                <Variable IRI="diseasediseaseuser"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/task_problem#Can_Push_Button_With_Difficulties"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">InputInterfaceButtonActionWidgets</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#performsTask"/>
+                <Variable IRI="diseasediseaseuser"/>
+                <Variable IRI="diseasediseasetask"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasDefaultInterface"/>
+                <Variable IRI="diseasediseasetask"/>
+                <Variable IRI="diseasediseaseinterface"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasUserActions"/>
+                <Variable IRI="diseasediseasetask"/>
+                <Variable IRI="diseasediseaseaction"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#Answer_by_Control_Button"/>
+                <Variable IRI="diseasediseaseaction"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+                <Variable IRI="diseasediseaseinterface"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Button"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+                <Variable IRI="diseasediseaseinterface"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Radio_Button"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+                <Variable IRI="diseasediseaseinterface"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Check_Box"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">InputInterfaceTextInstructionsComponents</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#performsTask"/>
+                <Variable IRI="user"/>
+                <Variable IRI="task"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasDefaultInterface"/>
+                <Variable IRI="task"/>
+                <Variable IRI="interface"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasCommandsForUser"/>
+                <Variable IRI="task"/>
+                <Variable IRI="command"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#Text_Instructions"/>
+                <Variable IRI="command"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+                <Variable IRI="interface"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Line_Edit"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+                <Variable IRI="interface"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_List_Widget"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+                <Variable IRI="interface"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Table_Widget"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SolutionTextInputTask</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasProblemsWithInterfaceTask"/>
+                <Variable IRI="user"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/task_problem#Can_Input_Text_With_Difficultiies"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#performsTask"/>
+                <Variable IRI="user"/>
+                <Variable IRI="task"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasDefaultInterface"/>
+                <Variable IRI="task"/>
+                <Variable IRI="interface"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasOutputInstance"/>
+                <Variable IRI="interface"/>
+                <Variable IRI="outputinterface"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/solution#Input_Non_Visual_Requirement"/>
+                <Variable IRI="req"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasRequirements"/>
+                <Variable IRI="outputinterface"/>
+                <Variable IRI="req"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rule to connect lacs and its physical problems</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LACS Problems</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasDisease"/>
+                <Variable IRI="user"/>
+                <NamedIndividual IRI="#LACS"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasPhysicalProblem"/>
+                <Variable IRI="user"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/3/physical_problem#Complexity_of_Arm_Control"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasPhysicalProblem"/>
+                <Variable IRI="user"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/3/physical_problem#Complexity_of_Visual_Information_Perception"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">InputInterfaceComponents</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#performsTask"/>
+                <Variable IRI="user"/>
+                <Variable IRI="task"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task#hasDefaultInterface"/>
+                <Variable IRI="task"/>
+                <Variable IRI="interface"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+                <Variable IRI="interface"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Widget_Button"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">InputInterfaceComponents</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#hasComponents"/>
+                <Variable IRI="interfacey"/>
+                <Variable IRI="interfacee"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head/>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#After_Viral_Meningit</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Viral meningitis is a common infection in the central nervous system
+(CNS). Generally, the disease is considered self-limiting with a mild clinical
+course. However, recent studies have indicated that patients with
+viral meningitis may develop persisting cognitive impairment such as
+short-term memory loss and attention deficits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Attention_Deficit_Hyperactivity_Disorder</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Persons with ADHD may have difficulty with finishing assignments from school or tasks from home, jumping from one activity to another. They may lose things; forget things like homework or something they were supposed to do. They may have difficulty with following instructions, or following through with tasks they have been assigned. The person may make careless mistakes, or have difficulty paying attention to details. Persons with ADHD may have trouble organizing activities, or tasks, and may interrupt other people. They may fidget, feel restless, or talk excessively.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dementia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dementia is a serious loss of cognitive ability in a previously unimpaired person, beyond what might be expected from normal aging.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Deuteranomaly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Deuteranomaly is also referred to as, &apos;green-weakness,&apos; and the person has difficulty telling differences in the red, orange, yellow and green regions of the color spectrum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Deuteranopia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Persons with Deuteranopia experience the same vision issues as persons with Protanopia, but the dimming is not as great.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dichromasy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Persons with Dichromasy cannot tell the difference between red, orange, yellow and green.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dyslexia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dyslexia involves difficulty in single world decoding, often reflecting an insufficient phonological processing ability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fragile_X_syndrome</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Signs that a person might have FXS include:
+
+Developmental delays (not sitting, walking, or talking at the same time as other persons the same age);
+Learning disabilities (trouble learning new skills);
+Social and behavior problems (such as not making eye contact, anxiety, trouble paying attention, hand flapping, acting and speaking without thinking, and being very active).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Full_Deafness</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Have no hearing at all.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LACS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lacunar Syndrome Subcortial stroke due to small vessel disfunction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Legally_Blind_Visual_Impairment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Persons who are legally blind have less than 20/200 vision in their better eye, or a very limited field of vision, often 20 degrees at its widest point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Low_Vision_Impairment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">usually is used to refer to persons who experience a more severe loss of vision that is not necessarily limited to distance vision. Persons with low-vision may be unable to read a newspaper at an average distance with eyeglasses or contacts, and may need large print or Braille.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mild_Hearing_Impairment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">for adults: between 26 and 40 dB HL
+for children: between 20 and 40 dB HL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Moderate_Hearing_Impairment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">between 41 and 54 dB HL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Moderately_Severe_Hearing_Impairment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">between 55 and 70 dB HL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Monochromasy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Monochromasy is the form most associated with colorblindness, where people see no colors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PACS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Partial Anterior Circulation Syndrome Cortial Stroke in middle / anterior cerebral artery areas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#POCS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Posterior Circulation Syndrome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Partially_Sighted_Vision_Impairment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the person has some form of visual disability that may require special education</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Profound_Hearing_Impairment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">91 dB HL or greater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Protanomaly</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Protanomaly is referred to as, &apos;red-weakness,&apos; and the person views a shift in the hue of red colors towards green and additional affects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Protanopia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Persons with Protanopia find that the brightness of colors such as red, orange and yellow is greatly reduced; they may appear as black or dark gray.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Severe_Hearing_Impairment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">between 71 and 90 dB HL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TACS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Total anterior circulation stroke
+Large cortical stroke in middle / anterior cerebral artery areas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Totally_Blind_Visual_Impairment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Persons who are totally blind are unable to see and often use Braille or other non-visual forms of media.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Traumatic_Brain_Injury</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Symptoms of a TBI may not appear until days or weeks following the injury. A concussion is the mildest type. It can cause a headache or neck pain, nausea, ringing in the ears, dizziness, and tiredness. People with a moderate or severe TBI may have those, plus other symptoms:
+
+Slurred speech.
+Dilated eye pupils.
+Convulsions or seizures.
+Repeated vomiting or nausea.
+Inability to awaken from sleep.
+Weakness or numbness in the arms and legs.
+A headache that gets worse or does not go away.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+

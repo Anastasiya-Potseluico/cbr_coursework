@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task">
+    <Prefix name="" IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Text_Instructions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Task_On_Interface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Your_Name_For_Adam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video_Commands"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Answer_by_Video"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUserActions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voice_Commands"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDefaultInterface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adam_Pressed_Button"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commands_For_User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Actions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Answer_by_Gesture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Answer_by_Picture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWidgetImplementation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCommandsForUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Answer_by_Voice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adam_Inputs_Name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Answer_by_Text"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Picture_Instructions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Answer_by_Control_Button"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Interface"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Answer_by_Control_Button"/>
+        <Class IRI="#User_Actions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Answer_by_Gesture"/>
+        <Class IRI="#User_Actions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Answer_by_Picture"/>
+        <Class IRI="#User_Actions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Answer_by_Text"/>
+        <Class IRI="#User_Actions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Answer_by_Video"/>
+        <Class IRI="#User_Actions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Answer_by_Voice"/>
+        <Class IRI="#User_Actions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commands_For_User"/>
+        <Class IRI="#Task_On_Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Picture_Instructions"/>
+        <Class IRI="#Commands_For_User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Text_Instructions"/>
+        <Class IRI="#Commands_For_User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Actions"/>
+        <Class IRI="#Task_On_Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video_Commands"/>
+        <Class IRI="#Commands_For_User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voice_Commands"/>
+        <Class IRI="#Commands_For_User"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Answer_by_Text"/>
+        <NamedIndividual IRI="#Adam_Inputs_Name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer_by_Control_Button"/>
+        <NamedIndividual IRI="#Adam_Pressed_Button"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Text_Instructions"/>
+        <NamedIndividual IRI="#Input_Your_Name_For_Adam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Task_On_Interface"/>
+        <NamedIndividual IRI="#Task_1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCommandsForUser"/>
+        <NamedIndividual IRI="#Task_1"/>
+        <NamedIndividual IRI="#Input_Your_Name_For_Adam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUserActions"/>
+        <NamedIndividual IRI="#Task_1"/>
+        <NamedIndividual IRI="#Adam_Inputs_Name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUserActions"/>
+        <NamedIndividual IRI="#Task_1"/>
+        <NamedIndividual IRI="#Adam_Pressed_Button"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCommandsForUser"/>
+        <Class IRI="#Task_On_Interface"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDefaultInterface"/>
+        <Class IRI="#Task_On_Interface"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUserActions"/>
+        <Class IRI="#Task_On_Interface"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCommandsForUser"/>
+        <Class IRI="#Commands_For_User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDefaultInterface"/>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface#Input_Interface"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUserActions"/>
+        <Class IRI="#User_Actions"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Task_1</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enter Text in line edit and press button.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+

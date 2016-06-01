@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/анастасия/ontologies/2016/3/physical_problem"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/анастасия/ontologies/2016/3/physical_problem">
+    <Prefix name="" IRI="http://www.semanticweb.org/анастасия/ontologies/2016/3/physical_problem"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cognitive_Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease_Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emotional_Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hearing_Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Limbs_Absence_Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_and_Mobility_Disfunction_Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_and_Mobility_Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vision_Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voice_Problem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasDisease"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasForbiddenColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cantHearSpeechContent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cantRecognizeColor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Ataxic_Cerebral_Palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Athetoid_Cerebral_Palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Deuteranomaly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Hemiplegetic_Cerebral_Palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Spastic_Cerebral_Palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color_Perception_Problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comlexity_of_Audio_Perception_Probllem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Complexity_Of_Reading_Text"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Complexity_of_Arm_Control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Complexity_of_Visual_Information_Perception"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comprehension_Problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Easily_Excitable_Problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inability_Touch_Problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lack_of_Attention_Problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lack_of_Memorization_Problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paroxysm_Problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scared_of_Audio_Problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scared_of_Color_Problem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Speech_Problem"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Cognitive_Problem"/>
+        <Class IRI="#Disease_Problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emotional_Problem"/>
+        <Class IRI="#Disease_Problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hearing_Problem"/>
+        <Class IRI="#Disease_Problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Limbs_Absence_Problem"/>
+        <Class IRI="#Physical_and_Mobility_Problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_and_Mobility_Disfunction_Problem"/>
+        <Class IRI="#Physical_and_Mobility_Problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_and_Mobility_Problem"/>
+        <Class IRI="#Disease_Problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vision_Problem"/>
+        <Class IRI="#Disease_Problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voice_Problem"/>
+        <Class IRI="#Disease_Problem"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Vision_Problem"/>
+        <NamedIndividual IRI="#Color_Perception_Problem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hearing_Problem"/>
+        <NamedIndividual IRI="#Comlexity_of_Audio_Perception_Probllem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vision_Problem"/>
+        <NamedIndividual IRI="#Complexity_Of_Reading_Text"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Physical_and_Mobility_Disfunction_Problem"/>
+        <NamedIndividual IRI="#Complexity_of_Arm_Control"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vision_Problem"/>
+        <NamedIndividual IRI="#Complexity_of_Visual_Information_Perception"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cognitive_Problem"/>
+        <NamedIndividual IRI="#Comprehension_Problem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Emotional_Problem"/>
+        <NamedIndividual IRI="#Easily_Excitable_Problem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Limbs_Absence_Problem"/>
+        <NamedIndividual IRI="#Inability_Touch_Problem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cognitive_Problem"/>
+        <NamedIndividual IRI="#Lack_of_Attention_Problem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cognitive_Problem"/>
+        <NamedIndividual IRI="#Lack_of_Memorization_Problem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Emotional_Problem"/>
+        <NamedIndividual IRI="#Paroxysm_Problem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Emotional_Problem"/>
+        <NamedIndividual IRI="#Scared_of_Audio_Problem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Emotional_Problem"/>
+        <NamedIndividual IRI="#Scared_of_Color_Problem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Voice_Problem"/>
+        <NamedIndividual IRI="#Speech_Problem"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Ataxic_Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Comlexity_of_Audio_Perception_Probllem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Ataxic_Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Complexity_of_Visual_Information_Perception"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Athetoid_Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Comlexity_of_Audio_Perception_Probllem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Deuteranomaly"/>
+        <NamedIndividual IRI="#Color_Perception_Problem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Hemiplegetic_Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Comprehension_Problem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Hemiplegetic_Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Paroxysm_Problem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Hemiplegetic_Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Speech_Problem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Spastic_Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Speech_Problem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Spastic_Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Comlexity_of_Audio_Perception_Probllem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Spastic_Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Paroxysm_Problem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#Spastic_Cerebral_Palsy"/>
+        <NamedIndividual IRI="#Comprehension_Problem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cantHearSpeechContent"/>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cantRecognizeColor"/>
+        <Class IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+        <Class IRI="#Disease_Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cantRecognizeColor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasPhysicalProblem"/>
+            <Class IRI="#Vision_Problem"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasDisease"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease#hasForbiddenColor"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#cantRecognizeColor"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Complexity_of_Visual_Information_Perception</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">means that user can&apos;t percept visual information, f.e. ataxics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Comprehension_Problem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lack of understanding function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Paroxysm_Problem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In case of epilepsy</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

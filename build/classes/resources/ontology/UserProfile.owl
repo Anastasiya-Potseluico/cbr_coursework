@@ -1,0 +1,565 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/анастасия/ontologies/2016/2/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/анастасия/ontologies/2016/2/untitled-ontology-4#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Battery_Charge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brightness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Camera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Display"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dynamics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Input_Facility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keyboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microphone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orientation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Output_Facility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sound_Volume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Special_Extra_Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TouchScreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Device"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDevise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adam_Green"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adam_Inputs_Name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adam_Pressed_Button"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adapted_Interface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adapted_Interface_For_Task1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#After_Viral_Meningit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amnesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Animation_Without_Pulsation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anna_Black"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Any_Animation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attention_Deficit_Hyperactivity_Disorder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Autism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Available_Exit_Button"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brain_Tumor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bryan_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cerebral_Palsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chromophobia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dementia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Depression"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deuteranomaly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deuteranopia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dichromasy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Down_Syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dyslexia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Epilepsy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fast_Changing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fragile_X_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Full_Deafness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypermnesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypomnesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Audio_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Device_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Interface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Interface_For_Task1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Picture_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Text_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Video_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Widget_Button"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Widget_Check_Box"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Widget_Combo_Box"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Widget_Line_Edit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Widget_List_Widget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Widget_Radio_Button"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Widget_Table_Widget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Input_Your_Name_For_Adam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Instability_Of_Attention"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Left_Hand_Amputated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Left_Thumb_Amputated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Legally_Blind_Visual_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Light_Notificaction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Low_Vision_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mild_Hearing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moderate_Hearing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moderately_Severe_Hearing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monochromasy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#More_than_Two_Finger_Gesture_Control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Narrow_Scope_Of_Attention"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nervous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Non_Animation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#One_Finger_Gesture_Control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Output_Audio_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Output_Device_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Output_Picture_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Output_Text_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Output_Video_Requirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Output_Widget_Audio_Listen_Widget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Output_Widget_Picture_View_Widget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Output_Widget_Text_Label_Widget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Output_Widget_Text_View_Widget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Output_Widget_Video_View_Widget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Partially_Sighted_Vision_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Partly_Deafness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phonophobia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Profound_Hearing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protanomaly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protanopia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Right_Hand_Amputated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Right_Thumb_Amputated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Severe_Hearing_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sound_Notificaction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stroke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Totally_Blind_Visual_Impairment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Traumatic_Brain_Injury"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Two_Finger_Gesture_Control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unavailable_Exit_Button"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vibro_Notificaction"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Battery_Charge"/>
+        <Class IRI="#User_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brightness"/>
+        <Class IRI="#Display"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camera"/>
+        <Class IRI="#Input_Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Display"/>
+        <Class IRI="#Output_Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dynamics"/>
+        <Class IRI="#Output_Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Input_Facility"/>
+        <Class IRI="#User_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Keyboard"/>
+        <Class IRI="#Input_Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microphone"/>
+        <Class IRI="#Input_Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mouse"/>
+        <Class IRI="#Input_Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orientation"/>
+        <Class IRI="#Display"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Output_Facility"/>
+        <Class IRI="#User_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sound_Volume"/>
+        <Class IRI="#Dynamics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Special_Extra_Devices"/>
+        <Class IRI="#Output_Facility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TouchScreen"/>
+        <Class IRI="#Input_Facility"/>
+    </SubClassOf>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDevise"/>
+        <Class IRI="#User_Device"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#After_Viral_Meningit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Viral meningitis is a common infection in the central nervous system
+(CNS). Generally, the disease is considered self-limiting with a mild clinical
+course. However, recent studies have indicated that patients with
+viral meningitis may develop persisting cognitive impairment such as
+short-term memory loss and attention deficits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Attention_Deficit_Hyperactivity_Disorder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Persons with ADHD may have difficulty with finishing assignments from school or tasks from home, jumping from one activity to another. They may lose things; forget things like homework or something they were supposed to do. They may have difficulty with following instructions, or following through with tasks they have been assigned. The person may make careless mistakes, or have difficulty paying attention to details. Persons with ADHD may have trouble organizing activities, or tasks, and may interrupt other people. They may fidget, feel restless, or talk excessively.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cerebral_Palsy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The term, &apos;Cerebral Palsy,&apos; is used to describe a group of chronic conditions which affect body movements and muscle coordination in persons affected with the disorder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dementia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dementia is a serious loss of cognitive ability in a previously unimpaired person, beyond what might be expected from normal aging.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Deuteranomaly</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Deuteranomaly is also referred to as, &apos;green-weakness,&apos; and the person has difficulty telling differences in the red, orange, yellow and green regions of the color spectrum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Deuteranopia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Persons with Deuteranopia experience the same vision issues as persons with Protanopia, but the dimming is not as great.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dichromasy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Persons with Dichromasy cannot tell the difference between red, orange, yellow and green.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dyslexia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dyslexia involves difficulty in single world decoding, often reflecting an insufficient phonological processing ability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fragile_X_syndrome</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Signs that a person might have FXS include:
+
+Developmental delays (not sitting, walking, or talking at the same time as other persons the same age);
+Learning disabilities (trouble learning new skills);
+Social and behavior problems (such as not making eye contact, anxiety, trouble paying attention, hand flapping, acting and speaking without thinking, and being very active).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Full_Deafness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Have no hearing at all.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Input_Widget_Button</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Simple button to submit some action in interface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Input_Widget_Check_Box</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Simple flag to answer true or false on some command.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Input_Widget_Combo_Box</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">List of values, user needs to choose only one to continue.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Input_Widget_Line_Edit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Widget to input some words to program, it cannot process huge amount of text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Input_Widget_List_Widget</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Widget to input some text values as a table with one column.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Legally_Blind_Visual_Impairment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Persons who are legally blind have less than 20/200 vision in their better eye, or a very limited field of vision, often 20 degrees at its widest point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Low_Vision_Impairment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">usually is used to refer to persons who experience a more severe loss of vision that is not necessarily limited to distance vision. Persons with low-vision may be unable to read a newspaper at an average distance with eyeglasses or contacts, and may need large print or Braille.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mild_Hearing_Impairment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">for adults: between 26 and 40 dB HL
+for children: between 20 and 40 dB HL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Moderate_Hearing_Impairment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">between 41 and 54 dB HL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Moderately_Severe_Hearing_Impairment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">between 55 and 70 dB HL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Monochromasy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Monochromasy is the form most associated with colorblindness, where people see no colors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Partially_Sighted_Vision_Impairment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">the person has some form of visual disability that may require special education</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Profound_Hearing_Impairment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">91 dB HL or greater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Protanomaly</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protanomaly is referred to as, &apos;red-weakness,&apos; and the person views a shift in the hue of red colors towards green and additional affects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Protanopia</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Persons with Protanopia find that the brightness of colors such as red, orange and yellow is greatly reduced; they may appear as black or dark gray.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Severe_Hearing_Impairment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">between 71 and 90 dB HL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stroke</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">After a stroke, it’s common to find it difficult to concentrate or remember certain things. Person may also finds it difficult to work out how to do something or know how to respond to what’s going on around him.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Task_1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Enter Text in line edit and press button.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Totally_Blind_Visual_Impairment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Persons who are totally blind are unable to see and often use Braille or other non-visual forms of media.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Traumatic_Brain_Injury</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Symptoms of a TBI may not appear until days or weeks following the injury. A concussion is the mildest type. It can cause a headache or neck pain, nausea, ringing in the ears, dizziness, and tiredness. People with a moderate or severe TBI may have those, plus other symptoms:
+
+Slurred speech.
+Dilated eye pupils.
+Convulsions or seizures.
+Repeated vomiting or nausea.
+Inability to awaken from sleep.
+Weakness or numbness in the arms and legs.
+A headache that gets worse or does not go away.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
