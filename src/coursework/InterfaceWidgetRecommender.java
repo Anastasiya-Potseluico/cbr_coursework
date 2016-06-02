@@ -121,6 +121,9 @@ public class InterfaceWidgetRecommender implements StandardCBRApplication {
     @Override
     public void configure() throws ExecutionException {
         try {
+            //Emulate data base server
+            jcolibri.test.database.HSQLDBserver.init();
+            
             URL url = getClass().getResource("/resources/dbresources/databaseconfig.xml");
             // Эмуляция сервера базы данных
             _dbConnector = new DataBaseConnector();
