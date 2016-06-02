@@ -1,17 +1,16 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC
   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
       "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<hibernate-mapping default-lazy="false">
-<class name="InterfaceDescription" table="Interface">
+<hibernate-mapping package="coursework">
+<class name="InterfaceDescription" table="interface_description">
 	<id name="caseId" column="caseId">
 	  <generator class="native"/>
 	</id>
-	<property name="carcassesType" type="string" column="carcassesType"/>
-	<property name="mark" type="string" column="mark"/>
-	<property name="TiresType" type="string" column="TiresType"/>
-	<property name="track" type="string" column="track"/>
-	<property name="weather" type="string" column="weather"/>
-
+	<property name="carcassesType" column="carcassesType"/>
+	<property name="mark" column="mark"/>
+	<property name="TiresType" column="TiresType"/>
+	<property name="track" column="track"/>
+	<property name="weather" column="weather"/>
 </class>
 </hibernate-mapping>
