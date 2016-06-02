@@ -13,13 +13,185 @@ import jcolibri.cbrcore.CBRQuery;
  *
  * @author Анастасия
  */
-class QueryDialog extends JDialog{
 
-    public QueryDialog(JFrame _mainFrame) {
-    }
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-    CBRQuery getQuery() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSpinner;
+import javax.swing.JTextField;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.SpringLayout;
+import javax.swing.UIManager;
+
+import jcolibri.cbrcore.CBRQuery;
+//import jcolibri.examples.TravelRecommender.TravelDescription;
+//import jcolibri.examples.TravelRecommender.TravelRecommender;
+//import jcolibri.examples.TravelRecommender.TravelDescription.AccommodationTypes;
+//import jcolibri.examples.TravelRecommender.TravelDescription.Seasons;
+import jcolibri.util.FileIO;
+
+public class QueryDialog extends JDialog {
+
+	private static final long serialVersionUID = 1L;
+
+	JLabel image;
+	
+	JComboBox carcassesType;
+	JComboBox mark;
+	JComboBox TiresType;
+	JComboBox track;
+	JComboBox weather;
+	JLabel caseId;
+        JTextField Result;
+	
+	public QueryDialog(JFrame parent)
+	{
+		super(parent,true);
+		configureFrame();
+	}
+	
+	private void configureFrame()
+	{
+		try
+		{
+		    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} catch (Exception e1)
+		{
+		}
+		
+		this.setTitle("Configure Query");
+
+		
+		image = new JLabel();
+		image.setIcon(new ImageIcon(FileIO.findFile("jcolibri/examples/TravelRecommender/gui/step1.png")));
+		this.getContentPane().setLayout(new BorderLayout());
+		this.getContentPane().add(image, BorderLayout.WEST);
+		
+		
+		/**********************************************************/
+		JPanel panel = new JPanel();
+		//panel.setLayout(new GridLayout(8,2));
+		panel.setLayout(new SpringLayout());
+		
+		JLabel label;
+		panel.add(label = new JLabel("Attribute"));
+		label.setFont(label.getFont().deriveFont(Font.BOLD));
+		panel.add(label = new JLabel("Value"));
+		label.setFont(label.getFont().deriveFont(Font.BOLD));
+		
+		panel.add(new JLabel("carcassesType"));
+		String[] carcassesTypes = {"diagonal", "radial"};
+		panel.add(carcassesType = new JComboBox(carcassesTypes));
+                
+                panel.add(new JLabel("mark"));
+		String[] marks = {"vaz", "kama","pirrely"};
+		panel.add(mark = new JComboBox(marks));
+                
+                panel.add(new JLabel("TiresType"));
+		String[] TiresTypes = {"pseslick", "slick","rainy"};
+		panel.add(TiresType = new JComboBox(TiresTypes));
+                
+                panel.add(new JLabel("track"));
+		String[] tracks = {"avtodrom", "city"};
+		panel.add(track = new JComboBox(tracks));
+                
+                panel.add(new JLabel("weather"));
+		String[] weathers = {"wet", "dry"};
+		panel.add(weather = new JComboBox(weathers));
+		
+		
+//		Lay out the panel.
+		Utils.makeCompactGrid(panel,
+		                8, 2, //rows, cols
+		                6, 6,        //initX, initY
+		                10, 10);       //xPad, yPad
+		
+		JPanel panelAux = new JPanel();
+		panelAux.setLayout(new BorderLayout());
+		panelAux.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+		panelAux.add(panel,BorderLayout.NORTH);
+		
+		JPanel buttons = new JPanel();
+		buttons.setLayout(new BorderLayout());
+		
+		JButton ok = new JButton("Set Query >>");
+		ok.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+				setQuery();
+			}
+		});
+		buttons.add(ok,BorderLayout.CENTER);
+		JButton exit = new JButton("Exit");
+		exit.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+				try {
+					InterfaceWidgetRecommender.getInstance().postCycle();
+				} catch (Exception ex) {
+					org.apache.commons.logging.LogFactory.getLog(InterfaceWidgetRecommender.class).error(ex);
+				}
+				System.exit(-1);
+			}
+		});
+		buttons.add(exit,BorderLayout.WEST);
+		
+		panelAux.add(buttons, BorderLayout.SOUTH);
+		this.getContentPane().add(panelAux, BorderLayout.CENTER);
+		
+		/**********************************************************/
+		
+		
+		this.pack();
+		this.setSize(600, this.getHeight());
+		this.setResizable(false);
+		Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+		setBounds((screenSize.width - this.getWidth()) / 2,
+			(screenSize.height - this.getHeight()) / 2, 
+			getWidth(),
+			getHeight());
+	}
+	
+	void setQuery()
+	{
+		this.setVisible(false);
+	}
+	
+	public CBRQuery getQuery()
+	{
+            InterfaceDescription desc = new InterfaceDescription();
+		
+		desc.setMark((String)this.mark.getSelectedItem());
+                desc.setCarcassesType((String)this.carcassesType.getSelectedItem());
+                desc.setTiresType((String)this.TiresType.getSelectedItem());
+                desc.setTrack((String)this.track.getSelectedItem());
+                desc.setWeather((String)this.weather.getSelectedItem());
+		
+		CBRQuery query = new CBRQuery();
+		query.setDescription(desc);
+		
+		return query;
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		QueryDialog qf = new QueryDialog(null);
+		qf.setVisible(true);
+		System.out.println("Bye");
+	}
+
+	
+
 }

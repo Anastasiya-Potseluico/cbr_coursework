@@ -11,7 +11,7 @@
       com.mysql.jdbc.Driver
    </property>
 
-   <!-- Assume test is the database name -->
+
    <property name="hibernate.connection.url">
       jdbc:mysql://localhost/cbrwork
    </property>
@@ -19,7 +19,7 @@
       root
    </property>
    <property name="hibernate.connection.password">
-      root
+      0112351321
    </property>
 
    <!-- List of XML mapping files -->

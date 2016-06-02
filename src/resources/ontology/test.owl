@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#track"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TiresType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trackCase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CBR_CASE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Mark"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_carcassesType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_track"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pirrely"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#carcassesType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_weather"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diagnal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MarkCase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Params"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pseslick"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_TiresType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_result"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#slick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CBR_DESCRIPTION"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TiresTypeCase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vaz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weatherCase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#city"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#win"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#carcassesTypeCase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#redial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rainy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mark"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#case2005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#avtodrom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CBR_INDEX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weather"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#case2003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResultCase"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#MarkCase"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_Mark"/>
+            <Class IRI="#Mark"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ResultCase"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_result"/>
+            <Class IRI="#Result"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TiresTypeCase"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_TiresType"/>
+            <Class IRI="#TiresType"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#carcassesTypeCase"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_carcassesType"/>
+            <Class IRI="#carcassesType"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#trackCase"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_track"/>
+            <Class IRI="#track"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#weatherCase"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_weather"/>
+            <Class IRI="#weather"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Mark"/>
+        <Class IRI="#Params"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarkCase"/>
+        <Class IRI="#cases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Params"/>
+        <Class IRI="#CBR_INDEX"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Result"/>
+        <Class IRI="#CBR_INDEX"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResultCase"/>
+        <Class IRI="#cases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TiresType"/>
+        <Class IRI="#Params"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TiresTypeCase"/>
+        <Class IRI="#cases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#carcassesType"/>
+        <Class IRI="#Params"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#carcassesTypeCase"/>
+        <Class IRI="#cases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cases"/>
+        <Class IRI="#CBR_CASE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cases"/>
+        <Class IRI="#CBR_DESCRIPTION"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#track"/>
+        <Class IRI="#Params"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trackCase"/>
+        <Class IRI="#cases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weather"/>
+        <Class IRI="#Params"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weatherCase"/>
+        <Class IRI="#cases"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#track"/>
+        <NamedIndividual IRI="#avtodrom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cases"/>
+        <NamedIndividual IRI="#case2003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cases"/>
+        <NamedIndividual IRI="#case2005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#track"/>
+        <NamedIndividual IRI="#city"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#carcassesType"/>
+        <NamedIndividual IRI="#diagnal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#weather"/>
+        <NamedIndividual IRI="#dry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mark"/>
+        <NamedIndividual IRI="#kama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Result"/>
+        <NamedIndividual IRI="#lose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mark"/>
+        <NamedIndividual IRI="#pirrely"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TiresType"/>
+        <NamedIndividual IRI="#pseslick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TiresType"/>
+        <NamedIndividual IRI="#rainy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#carcassesType"/>
+        <NamedIndividual IRI="#redial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TiresType"/>
+        <NamedIndividual IRI="#slick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mark"/>
+        <NamedIndividual IRI="#vaz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#weather"/>
+        <NamedIndividual IRI="#wet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Result"/>
+        <NamedIndividual IRI="#win"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Mark"/>
+        <NamedIndividual IRI="#case2003"/>
+        <NamedIndividual IRI="#vaz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_TiresType"/>
+        <NamedIndividual IRI="#case2003"/>
+        <NamedIndividual IRI="#slick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_carcassesType"/>
+        <NamedIndividual IRI="#case2003"/>
+        <NamedIndividual IRI="#diagnal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_result"/>
+        <NamedIndividual IRI="#case2003"/>
+        <NamedIndividual IRI="#win"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_track"/>
+        <NamedIndividual IRI="#case2003"/>
+        <NamedIndividual IRI="#avtodrom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_weather"/>
+        <NamedIndividual IRI="#case2003"/>
+        <NamedIndividual IRI="#dry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Mark"/>
+        <NamedIndividual IRI="#case2005"/>
+        <NamedIndividual IRI="#kama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_TiresType"/>
+        <NamedIndividual IRI="#case2005"/>
+        <NamedIndividual IRI="#pseslick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_carcassesType"/>
+        <NamedIndividual IRI="#case2005"/>
+        <NamedIndividual IRI="#diagnal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_result"/>
+        <NamedIndividual IRI="#case2005"/>
+        <NamedIndividual IRI="#win"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_track"/>
+        <NamedIndividual IRI="#case2005"/>
+        <NamedIndividual IRI="#city"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_weather"/>
+        <NamedIndividual IRI="#case2005"/>
+        <NamedIndividual IRI="#wet"/>
+    </ObjectPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+

@@ -38,7 +38,7 @@ import es.ucm.fdi.gaia.ontobridge.OntologyDocument;
  * Класс-синглтон для рекомендации виджетов для интерфейса
  * @author Анастасия
  */
-public class InterfaceWidgetRecommender implements StandardCBRApplication{
+public class InterfaceWidgetRecommender implements StandardCBRApplication { 
 
     /**
      * Единственный инстанс класса для рекомендациивиджетов
@@ -144,6 +144,7 @@ public class InterfaceWidgetRecommender implements StandardCBRApplication{
             _revisionDialog = new RevisionDialog(_mainFrame);
             _retainDialog = new RetainDialog(_mainFrame);
         } catch (Exception exception) {
+            System.out.println(exception.toString());
             throw new ExecutionException(exception);     
         }
         

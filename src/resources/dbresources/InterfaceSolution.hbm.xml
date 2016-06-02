@@ -4,8 +4,7 @@
 <class name="InterfaceWidgetRecommender.InterfaceSolution" table="travel">
 	<id name="id" column="caseId">
 	</id>
-	<property name="price" column="Price"/>
-	<property name="hotel" column="Hotel"/>	
+	<property name="Result" column="result"/>
 </class>
 
 </hibernate-mapping>
