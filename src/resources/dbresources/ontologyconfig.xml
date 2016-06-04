@@ -1,0 +1,48 @@
+ <OntologyConfiguration>
+        <MainOntology>
+             <URL>file:/home/vadim/cbr_coursework/build/classes/resources/ontology/test.owl</URL>
+            <LocalCopy>src/resources/ontology/test.owl</LocalCopy>
+        </MainOntology>   
+        
+        <!-- There are not subontologies -->
+        
+        <CaseMainConcept>cases</CaseMainConcept>
+        
+        <DescriptionClassName>coursework.InterfaceDescription</DescriptionClassName>
+        <DescriptionMappings>
+                <Map>
+                        <Property>has_carcassesType</Property>
+                        <Concept>carcassesTypeCase</Concept>
+                        <Attribute>carcassesType</Attribute>
+                </Map>
+                <Map>
+                        <Property>has_Mark</Property>
+                        <Concept>MarkCase</Concept>
+                        <Attribute>mark</Attribute>
+                </Map>
+                <Map>
+                        <Property>has_TiresType</Property>
+                        <Concept>TiresTypeCase</Concept>
+                        <Attribute>TiresType</Attribute>
+                </Map>
+                <Map>
+                        <Property>has_track</Property>
+                        <Concept>trackCase</Concept>
+                        <Attribute>track</Attribute>
+                </Map>
+                <Map>
+                        <Property>has_weather</Property>
+                        <Concept>weatherCase</Concept>
+                        <Attribute>weather</Attribute>
+                </Map>
+        </DescriptionMappings>
+        
+        <SolutionClassName>coursework.InterfaceSolution</SolutionClassName>
+        <SolutionMappings>
+                <Map>
+                        <Property>has_result</Property>
+                        <Concept>ResultCase</Concept>
+                        <Attribute>Result</Attribute>
+                </Map>
+        </SolutionMappings>
+ </OntologyConfiguration>

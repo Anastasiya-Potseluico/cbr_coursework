@@ -1,15 +1,14 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping default-lazy="false">
-<class name="InterfaceWidgetRecommender.InterfaceDescription" table="Travel">
-
+<class name="coursework.InterfaceDescription" table="interface_description">
 	<id name="caseId" column="caseId">
 	  <generator class="native"/>
 	</id>
-	<property name="carcassesType" column="carcassesType"/>
-	<property name="mark" column="mark"/>
-	<property name="TiresType" column="TiresType"/>
-	<property name="track" column="track"/>
-	<property name="weather" column="weather"/>
+	<property name="carcassesType" column="carcassesType" type="string"/>
+	<property name="mark" column="mark" type="string"/>
+	<property name="TiresType" column="TiresType" type="string"/>
+	<property name="track" column="track" type="string"/>
+	<property name="weather" column="weather" type="string"/>
 </class>
 </hibernate-mapping>

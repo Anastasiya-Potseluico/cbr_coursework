@@ -107,7 +107,7 @@ public class RetainDialog extends JDialog {
 
 		
 		image = new JLabel();
-		image.setIcon(new ImageIcon(FileIO.findFile("jcolibri/examples/TravelRecommender/gui/step6.png")));
+		image.setIcon(new ImageIcon(FileIO.findFile("resources/img/step6.png")));
 		this.getContentPane().setLayout(new BorderLayout());
 		this.getContentPane().add(image, BorderLayout.WEST);
 		
@@ -147,11 +147,6 @@ public class RetainDialog extends JDialog {
 		panel.add(Result = new JLabel());
 		
 //		Lay out the panel.
-		Utils.makeCompactGrid(panel,
-		                11, 2, //rows, cols
-		                6, 6,        //initX, initY
-		                30, 10);       //xPad, yPad
-		
 		JPanel casesPanel = new JPanel();
 		casesPanel.setLayout(new BorderLayout());
 		casesPanel.add(panel, BorderLayout.CENTER);

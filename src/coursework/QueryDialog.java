@@ -74,7 +74,7 @@ public class QueryDialog extends JDialog {
 
 		
 		image = new JLabel();
-		image.setIcon(new ImageIcon(FileIO.findFile("jcolibri/examples/TravelRecommender/gui/step1.png")));
+		image.setIcon(new ImageIcon(FileIO.findFile("resources/img/step1.png")));
 		this.getContentPane().setLayout(new BorderLayout());
 		this.getContentPane().add(image, BorderLayout.WEST);
 		
@@ -112,11 +112,6 @@ public class QueryDialog extends JDialog {
 		
 		
 //		Lay out the panel.
-		Utils.makeCompactGrid(panel,
-		                8, 2, //rows, cols
-		                6, 6,        //initX, initY
-		                10, 10);       //xPad, yPad
-		
 		JPanel panelAux = new JPanel();
 		panelAux.setLayout(new BorderLayout());
 		panelAux.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));

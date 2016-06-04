@@ -162,10 +162,10 @@ public class SimilarityDialog extends JDialog {
 		panel.add(new JSpinner(k = new SpinnerNumberModel(3,1,100,1)));
 
 //		Lay out the panel.
-		Utils.makeCompactGrid(panel,
-		                10, 2, //rows, cols
-		                6, 6,        //initX, initY
-		                20, 10);       //xPad, yPad
+//		Utils.makeCompactGrid(panel,
+//		                10, 2, //rows, cols
+//		                6, 6,        //initX, initY
+//		                20, 10);       //xPad, yPad
 		
 		JPanel panelAux = new JPanel();
 		panelAux.setLayout(new BorderLayout());

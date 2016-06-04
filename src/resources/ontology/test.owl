@@ -6,16 +6,17 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22">
+    <Prefix name="" IRI="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#track"/>
+        <NamedIndividual IRI="#wet"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#wet"/>
+        <Class IRI="#track"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TiresType"/>
@@ -42,10 +43,10 @@
         <Class IRI="#carcassesType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lose"/>
+        <ObjectProperty IRI="#has_weather"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_weather"/>
+        <NamedIndividual IRI="#lose"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#diagnal"/>
@@ -69,10 +70,10 @@
         <ObjectProperty IRI="#has_result"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#slick"/>
+        <NamedIndividual IRI="#dry"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#dry"/>
+        <NamedIndividual IRI="#slick"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CBR_DESCRIPTION"/>
@@ -205,14 +206,6 @@
     <SubClassOf>
         <Class IRI="#carcassesTypeCase"/>
         <Class IRI="#cases"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#cases"/>
-        <Class IRI="#CBR_CASE"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#cases"/>
-        <Class IRI="#CBR_DESCRIPTION"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#track"/>

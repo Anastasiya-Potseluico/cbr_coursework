@@ -68,7 +68,7 @@ public class AutoAdaptationDialog extends JDialog {
 
 		
 		image = new JLabel();
-		image.setIcon(new ImageIcon(FileIO.findFile("jcolibri/examples/TravelRecommender/gui/step4.png")));
+		image.setIcon(new ImageIcon(FileIO.findFile("resources/img/step4.png")));
 		this.getContentPane().setLayout(new BorderLayout());
 		this.getContentPane().add(image, BorderLayout.WEST);
 		

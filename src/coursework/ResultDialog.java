@@ -72,7 +72,7 @@ public class ResultDialog extends JDialog {
 
 		
 		image = new JLabel();
-		image.setIcon(new ImageIcon(FileIO.findFile("jcolibri/examples/TravelRecommender/gui/step3.png")));
+		image.setIcon(new ImageIcon(FileIO.findFile("resources/img/step3.png")));
 		this.getContentPane().setLayout(new BorderLayout());
 		this.getContentPane().add(image, BorderLayout.WEST);
 		
@@ -110,13 +110,7 @@ public class ResultDialog extends JDialog {
 		
 		panel.add(new JLabel("Result"));
 		panel.add(Result = new JLabel());
-		
-//		Lay out the panel.
-		Utils.makeCompactGrid(panel,
-		                11, 2, //rows, cols
-		                6, 6,        //initX, initY
-		                30, 10);       //xPad, yPad
-		
+				
 		JPanel casesPanel = new JPanel();
 		casesPanel.setLayout(new BorderLayout());
 		casesPanel.add(panel, BorderLayout.CENTER);

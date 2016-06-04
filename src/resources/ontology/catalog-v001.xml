@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1465061697798" name="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22" uri="test.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1465061697798" name="http://www.semanticweb.org/анастасия/ontologies/2016/2/device" uri="Device.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1465061697798" name="http://www.semanticweb.org/анастасия/ontologies/2016/2/disease" uri="Disease.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1465061697798" name="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface" uri="Interface.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1465061697798" name="http://www.semanticweb.org/анастасия/ontologies/2016/2/interface_task" uri="InterfaceTask.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1465061697798" name="http://www.semanticweb.org/анастасия/ontologies/2016/2/solution" uri="Solution.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1465061697798" name="http://www.semanticweb.org/анастасия/ontologies/2016/2/task_problem" uri="Problems.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1465061697798" name="http://www.semanticweb.org/анастасия/ontologies/2016/2/untitled-ontology-4" uri="UserProfile.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1465061697798" name="http://www.semanticweb.org/анастасия/ontologies/2016/3/physical_problem" uri="PhysicalProblem.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1465061697798" name="http://www.semanticweb.org/анастасия/ontologies/2016/3/untitled-ontology-30" uri="repository.owl"/>
+    </group>
+</catalog>

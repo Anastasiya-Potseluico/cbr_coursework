@@ -9,6 +9,7 @@ import arq.query;
 import es.ucm.fdi.gaia.ontobridge.OntoBridge;
 import es.ucm.fdi.gaia.ontobridge.OntologyDocument;
 import java.awt.Dimension;
+import java.sql.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -33,6 +34,7 @@ import jcolibri.method.reuse.NumericDirectProportionMethod;
 import jcolibri.util.FileIO;
 import es.ucm.fdi.gaia.ontobridge.OntoBridge;
 import es.ucm.fdi.gaia.ontobridge.OntologyDocument;
+import jcolibri.connector.OntologyConnector;
 
 /**
  * Класс-синглтон для рекомендации виджетов для интерфейса
@@ -52,6 +54,7 @@ public class InterfaceWidgetRecommender implements StandardCBRApplication {
     private RevisionDialog _revisionDialog;
     private RetainDialog _retainDialog;
     private static JFrame _mainFrame;
+    private OntoBridge ontoBridge;
     
     // Коннектор к базе данных
     Connector _dbConnector;
@@ -122,24 +125,14 @@ public class InterfaceWidgetRecommender implements StandardCBRApplication {
     public void configure() throws ExecutionException {
         try {
             //Emulate data base server
-            jcolibri.test.database.HSQLDBserver.init();
+            //jcolibri.test.database.HSQLDBserver.init();
             
-            URL url = getClass().getResource("/resources/dbresources/databaseconfig.xml");
-            // Эмуляция сервера базы данных
-            _dbConnector = new DataBaseConnector();
-            // Инициализация коннектора файлом с настройками
+            //URL url = getClass().getResource("/resources/dbresources/databaseconfig.xml");
+            URL url = getClass().getResource("/resources/dbresources/ontologyconfig.xml");
+            
+            _dbConnector = new OntologyConnector();
             _dbConnector.initFromXMLfile(url);
             _caseBase = new LinealCaseBase();
-            // Получить доступ к онтологии
-            OntoBridge ontoBridge = jcolibri.util.OntoBridgeSingleton.getOntoBridge();
-            // Конфигурация для работы с решателем pellet
-            ontoBridge.initWithPelletReasoner();
-            // Загрузка онтологии
-            OntologyDocument mainOntology = new OntologyDocument("http://www.semanticweb.org/анастасия/ontologies/2016/3/untitled-ontology-30",
-                                            FileIO.findFile("resources/dbresources/repository.owl").toExternalForm());
-            ArrayList<OntologyDocument> subOntologies = new ArrayList<OntologyDocument>();
-            ontoBridge.loadOntology(mainOntology, subOntologies, true);
-
             // Создать диалоги
             _similarityDialog = new SimilarityDialog(_mainFrame);
             _resultDialog = new ResultDialog(_mainFrame);
