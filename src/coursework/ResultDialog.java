@@ -9,6 +9,7 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -52,7 +53,6 @@ public class ResultDialog extends JDialog {
 	
 	ArrayList<RetrievalResult> cases;
 	int currentCase;
-	
 	public ResultDialog(JFrame main)
 	{
 		super(main,true);
@@ -79,8 +79,8 @@ public class ResultDialog extends JDialog {
 		
 		/**********************************************************/
 		JPanel panel = new JPanel();
-		//panel.setLayout(new GridLayout(8,2));
-		panel.setLayout(new SpringLayout());
+		panel.setLayout(new GridLayout(8,2));
+		//panel.setLayout(new SpringLayout());
 		
 		JLabel label;
 

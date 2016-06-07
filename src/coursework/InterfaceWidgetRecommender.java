@@ -181,7 +181,7 @@ public class InterfaceWidgetRecommender implements StandardCBRApplication {
 		//Collection<CBRCase> selectedcases = SelectCases.selectTopK(eval, _similarityDialog.getK());
 		
 		// Show result
-		//!!_resultDialog.showCases(eval, selectedcases);
+		_resultDialog.showCases(eval, _caseBase.getCases());
 		_resultDialog.setVisible(true);
 		
 		// Show adaptation dialog
