@@ -211,14 +211,14 @@ public class ResultDialog extends JDialog {
 		           
                 InterfaceDescription desc = (InterfaceDescription) _case.getDescription();
                 
-		this.carcassesType.setText(desc.getCarcassesType().toString());
-		this.mark.setText(desc.getMark().toString());
-		this.TiresType.setText(desc.getTiresType().toString());
-		this.track.setText(desc.getTrack().toString());
-		this.weather.setText(desc.getWeather().toString());
+		this.carcassesType.setText(desc.getCARCASSESTYPE().toString());
+		this.mark.setText(desc.getMARK().toString());
+		this.TiresType.setText(desc.getTIRESTYPE().toString());
+		this.track.setText(desc.getTRACK().toString());
+		this.weather.setText(desc.getWEATHER().toString());
 		
 		InterfaceSolution sol = (InterfaceSolution) _case.getSolution();
-		this.Result.setText(sol.getResult().toString());
+		this.Result.setText(sol.getRESULT().toString());
 	}
 	
 	/**

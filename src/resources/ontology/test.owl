@@ -47,7 +47,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-CARCASSESTYPE">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE"/>
     </owl:ObjectProperty>
     
 
@@ -131,6 +131,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBRCASE -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBRCASE"/>
@@ -198,7 +206,7 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -213,6 +221,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBRCASE"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_DESCRIPTION"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
@@ -342,7 +351,7 @@
     <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGNAL -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGNAL">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE"/>
     </owl:NamedIndividual>
     
 
@@ -398,7 +407,7 @@
     <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#REDIAL -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#REDIAL">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE"/>
     </owl:NamedIndividual>
     
 

@@ -35,6 +35,7 @@ import javax.swing.SpringLayout;
 import javax.swing.UIManager;
 
 import jcolibri.cbrcore.CBRQuery;
+import jcolibri.datatypes.Instance;
 //import jcolibri.examples.TravelRecommender.TravelDescription;
 //import jcolibri.examples.TravelRecommender.TravelRecommender;
 //import jcolibri.examples.TravelRecommender.TravelDescription.AccommodationTypes;
@@ -165,12 +166,15 @@ public class QueryDialog extends JDialog {
 	public CBRQuery getQuery()
 	{
             InterfaceDescription desc = new InterfaceDescription();
-		
-		desc.setMark((String)this.mark.getSelectedItem());
-                desc.setCarcassesType((String)this.carcassesType.getSelectedItem());
-                desc.setTiresType((String)this.TiresType.getSelectedItem());
-                desc.setTrack((String)this.track.getSelectedItem());
-                desc.setWeather((String)this.weather.getSelectedItem());
+            desc.setMARK(Instance.createInstance(this.mark.getSelectedItem().toString(), "MARK"));
+            desc.setTIRESTYPE(Instance.createInstance(this.TiresType.getSelectedItem().toString(), "TIRESTYPE"));
+            desc.setTRACK(Instance.createInstance(this.track.getSelectedItem().toString(), "TRACK"));
+            desc.setWEATHER(Instance.createInstance(this.weather.getSelectedItem().toString(), "WEATHER"));
+            String S = this.carcassesType.getSelectedItem().toString();
+            String S1 = "CARCASSESTYPE";
+            Instance I = Instance.createInstance(S,S1);
+            desc.setCARCASSESTYPE(Instance.createInstance(this.carcassesType.getSelectedItem().toString(), "CARCASSESTYPE"));
+
 		
 		CBRQuery query = new CBRQuery();
 		query.setDescription(desc);
@@ -180,13 +184,13 @@ public class QueryDialog extends JDialog {
 	
 	/**
 	 * @param args
-	 */
 	public static void main(String[] args) {
 		QueryDialog qf = new QueryDialog(null);
 		qf.setVisible(true);
 		System.out.println("Bye");
 	}
 
+	 */
 	
 
 }

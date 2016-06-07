@@ -6,28 +6,35 @@
 package coursework;
 
 import jcolibri.cbrcore.Attribute;
+import jcolibri.datatypes.Instance;
 
 /**
  *
  * @author Анастасия
  */
 public class InterfaceSolution implements jcolibri.cbrcore.CaseComponent {
-    private String RESULT;
-    private String caseId;
+    public Instance RESULT;
+    public Instance id;
     @Override
     public Attribute getIdAttribute() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new Attribute("id", this.getClass());
     }
-    public Object getResult() {
+    public Instance getRESULT() {
         return RESULT;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setResult(String text) {
-        RESULT = text;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setRESULT(Instance result) {
+        RESULT = result;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setId(String text) {
-        caseId = text;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setId(Instance id) {
+        this.id = id;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public Instance getId() {
+        return id;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public String toString() {
+        return "("+ id + ";"+ RESULT + ")";
     }
     
 }

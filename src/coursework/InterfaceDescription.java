@@ -6,65 +6,70 @@
 package coursework;
 
 import jcolibri.cbrcore.Attribute;
+import jcolibri.datatypes.Instance;
 /**
  *
  * @author Анастасия
  */
 public class InterfaceDescription implements jcolibri.cbrcore.CaseComponent {
-	private String CARCASSESTYPE;
-        private String MARK;
-        private String TRACK;
-        private String WEATHER;
-        private String TIRESTYPE;
-        private int caseId;
+    public Instance CARCASSESTYPE;
+    public Instance MARK;
+    public Instance TRACK;
+    public Instance WEATHER;
+    public Instance TIRESTYPE;
+    public Instance CASEID;
+    
     @Override
     public Attribute getIdAttribute() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new Attribute("CASEID", this.getClass());
     }
-    int getCaseId() {
-        return caseId;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Instance getCASEID() {
+        return CASEID;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    String getCarcassesType() {
+    public Instance getCARCASSESTYPE() {
         return CARCASSESTYPE;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    String getTiresType() {
+    public Instance getTIRESTYPE() {
         return TIRESTYPE;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    String getMark() {
+    public Instance getMARK() {
         return MARK;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    String getTrack() {
+    public Instance getTRACK() {
         return TRACK;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    String getWeather() {
+    public Instance getWEATHER() {
         return WEATHER;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setMark(String string) {
-        MARK = string;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setMARK(Instance mark) {
+        MARK = mark;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setWeather(String string) {
-        WEATHER = string;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setWEATHER(Instance weather) {
+        WEATHER = weather;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setTiresType(String string) {
-        TIRESTYPE = string;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setTIRESTYPE(Instance tirestype) {
+        TIRESTYPE = tirestype;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setCarcassesType(String string) {
-        CARCASSESTYPE = string;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setCARCASSESTYPE(Instance carcasessestype) {
+        CARCASSESTYPE = carcasessestype;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setTrack(String string) {
-        TRACK = string;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setTRACK(Instance track) {
+        TRACK = track;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setCaseId(String text) {
-        caseId = Integer.valueOf(text);// throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setCASEID(Instance caseid) {
+        CASEID = caseid;// throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public String toString() {
+        return "("+ CASEID + ";"+ TRACK + ";"+ MARK + ";"+ TIRESTYPE + ";"+ CARCASSESTYPE + ";"+ WEATHER + ")";
     }
     
 }

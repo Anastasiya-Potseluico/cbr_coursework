@@ -207,71 +207,30 @@ public class SimilarityDialog extends JDialog {
 		SimilConfigPanel similConfig;
 		LocalSimilarityFunction function;
 		similConfig = carcassesType;
-		attribute = new Attribute("carcassesType",InterfaceDescription.class);
+		attribute = new Attribute("CARCASSESTYPE",InterfaceDescription.class);
 		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
 		config.addMapping(attribute, function);
 		config.setWeight(attribute, similConfig.getWeight());
 		similConfig = mark;
-		attribute = new Attribute("mark",InterfaceDescription.class);
+		attribute = new Attribute("MARK",InterfaceDescription.class);
 		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
 		config.addMapping(attribute, function);
 		config.setWeight(attribute, similConfig.getWeight());
 		similConfig = TiresType;
-		attribute = new Attribute("TiresType",InterfaceDescription.class);
+		attribute = new Attribute("TIRESTYPE",InterfaceDescription.class);
 		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
 		config.addMapping(attribute, function);
 		config.setWeight(attribute, similConfig.getWeight());
 		similConfig = track;
-		attribute = new Attribute("track",InterfaceDescription.class);
+		attribute = new Attribute("TRACK",InterfaceDescription.class);
 		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
 		config.addMapping(attribute, function);
 		config.setWeight(attribute, similConfig.getWeight());
 		similConfig = weather;
-		attribute = new Attribute("weather",InterfaceDescription.class);
+		attribute = new Attribute("WEATHER",InterfaceDescription.class);
 		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
 		config.addMapping(attribute, function);
 		config.setWeight(attribute, similConfig.getWeight());
-//		similConfig = holidayType;
-//		attribute = new Attribute("HolidayType",InterfaceDescription.class);
-//		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
-//		config.addMapping(attribute, function);
-//		config.setWeight(attribute, similConfig.getWeight());
-//
-//		similConfig = this.persons;
-//		attribute = new Attribute("NumberOfPersons",InterfaceDescription.class);
-//		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
-//		config.addMapping(attribute, function);
-//		config.setWeight(attribute, similConfig.getWeight());
-//
-//		similConfig = this.region;
-//		attribute = new Attribute("Region",InterfaceDescription.class);
-//		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
-//		config.addMapping(attribute, function);
-//		config.setWeight(attribute, similConfig.getWeight());
-//
-//		similConfig = this.transportation;
-//		attribute = new Attribute("Transportation",InterfaceDescription.class);
-//		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
-//		config.addMapping(attribute, function);
-//		config.setWeight(attribute, similConfig.getWeight());
-//
-//		similConfig = duration;
-//		attribute = new Attribute("Duration",InterfaceDescription.class);
-//		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
-//		config.addMapping(attribute, function);
-//		config.setWeight(attribute, similConfig.getWeight());
-//
-//		similConfig = this.season;
-//		attribute = new Attribute("Season",InterfaceDescription.class);
-//		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
-//		config.addMapping(attribute, function);
-//		config.setWeight(attribute, similConfig.getWeight());
-//
-//		similConfig = this.accommodation;
-//		attribute = new Attribute("Accommodation",InterfaceDescription.class);
-//		function = localSimilFactory(similConfig.getSimilFuntion(), similConfig.getParam()); 
-//		config.addMapping(attribute, function);
-//		config.setWeight(attribute, similConfig.getWeight());
 
 		
 		return config;

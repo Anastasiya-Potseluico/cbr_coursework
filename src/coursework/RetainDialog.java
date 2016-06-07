@@ -54,6 +54,7 @@ import javax.swing.SpringLayout;
 import javax.swing.UIManager;
 
 import jcolibri.cbrcore.CBRCase;
+import jcolibri.datatypes.Instance;
 //import jcolibri.examples.TravelRecommender.TravelDescription;
 //import jcolibri.examples.TravelRecommender.TravelRecommender;
 //import jcolibri.examples.TravelRecommender.TravelSolution;
@@ -273,14 +274,14 @@ public class RetainDialog extends JDialog {
 		
 		InterfaceDescription desc = (InterfaceDescription) _case.getDescription();
                 
-		this.carcassesType.setText(desc.getCarcassesType().toString());
-		this.mark.setText(desc.getMark().toString());
-		this.TiresType.setText(desc.getTiresType().toString());
-		this.track.setText(desc.getTrack().toString());
-		this.weather.setText(desc.getWeather().toString());
+		this.carcassesType.setText(desc.getCARCASSESTYPE().toString());
+		this.mark.setText(desc.getMARK().toString());
+		this.TiresType.setText(desc.getTIRESTYPE().toString());
+		this.track.setText(desc.getTRACK().toString());
+		this.weather.setText(desc.getWEATHER().toString());
 		
 		InterfaceSolution sol = (InterfaceSolution) _case.getSolution();
-		this.Result.setText(sol.getResult().toString());
+		this.Result.setText(sol.getRESULT().toString());
 	}
 	
 	
@@ -290,9 +291,9 @@ public class RetainDialog extends JDialog {
 		cases.remove(_case);
 		
 		InterfaceDescription desc = (InterfaceDescription) _case.getDescription();
-		desc.setCaseId(idEditor.getText());
+		desc.setCASEID(Instance.createInstance(idEditor.getText(),"CASEID"));
 		InterfaceSolution sol = (InterfaceSolution) _case.getSolution();
-		sol.setId(idEditor.getText());
+		sol.setId(Instance.createInstance(idEditor.getText(),"id"));
 		casesToRetain.add(_case);
 		
 		currentCase = 0;

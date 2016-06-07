@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import jcolibri.cbrcore.CBRCase;
+import jcolibri.datatypes.Instance;
 import jcolibri.util.FileIO;
 /**
  *
@@ -241,14 +242,14 @@ class RevisionDialog extends JDialog {
 		
 		InterfaceDescription desc = (InterfaceDescription) _case.getDescription();
                 
-		this.carcassesType.setSelectedItem(desc.getCarcassesType().toString());
-		this.mark.setSelectedItem(desc.getMark());
-		this.TiresType.setSelectedItem(desc.getTiresType());
-		this.track.setSelectedItem(desc.getTrack());
-		this.weather.setSelectedItem(desc.getWeather());
+		this.carcassesType.setSelectedItem(desc.getCARCASSESTYPE());
+		this.mark.setSelectedItem(desc.getMARK());
+		this.TiresType.setSelectedItem(desc.getTIRESTYPE());
+		this.track.setSelectedItem(desc.getTRACK());
+		this.weather.setSelectedItem(desc.getWEATHER());
 		
 		InterfaceSolution sol = (InterfaceSolution) _case.getSolution();
-		this.Result.setText(sol.getResult().toString());
+		this.Result.setText(sol.getRESULT().toString());
 	}
 	
 	void saveCase()
@@ -258,14 +259,14 @@ class RevisionDialog extends JDialog {
 		
 		InterfaceDescription desc = (InterfaceDescription) _case.getDescription();
 		
-		desc.setMark((String)this.mark.getSelectedItem());
-                desc.setCarcassesType((String)this.carcassesType.getSelectedItem());
-                desc.setTiresType((String)this.TiresType.getSelectedItem());
-                desc.setTrack((String)this.track.getSelectedItem());
-                desc.setWeather((String)this.weather.getSelectedItem());
+		desc.setMARK(Instance.createInstance((String)this.mark.getSelectedItem(), "MARK"));
+                desc.setCARCASSESTYPE(Instance.createInstance((String)this.carcassesType.getSelectedItem(), "CARCASSESTYPE"));
+                desc.setTIRESTYPE(Instance.createInstance((String)this.TiresType.getSelectedItem(), "TIRSTYPE"));
+                desc.setTRACK(Instance.createInstance((String)this.track.getSelectedItem(), "TRACK"));
+                desc.setWEATHER(Instance.createInstance((String)this.weather.getSelectedItem(), "WEATHER"));
 		
 		InterfaceSolution sol = (InterfaceSolution) _case.getSolution();
-		sol.setResult(this.Result.getText());
+		sol.setRESULT(Instance.createInstance(_case.getID().toString(), "RESULT"));
 	}
 	
 	/**

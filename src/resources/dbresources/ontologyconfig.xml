@@ -12,27 +12,27 @@
         <DescriptionMappings>
                 <Map>
                         <Property>HAS-CARCASSESTYPE</Property>
-                        <Concept>WHEEL_CARCASSESTYPE_CASE</Concept>
+                        <Concept>CARCASSESTYPE</Concept>
                         <Attribute>CARCASSESTYPE</Attribute>
                 </Map>
                 <Map>
                         <Property>HAS-MARK</Property>
-                        <Concept>WHEEL_MARK_CASE</Concept>
+                        <Concept>MARK</Concept>
                         <Attribute>MARK</Attribute>
                 </Map>
                 <Map>
                         <Property>HAS-TIRESTYPE</Property>
-                        <Concept>WHEEL_TIRESTYPE_CASE</Concept>
+                        <Concept>TIRESTYPE</Concept>
                         <Attribute>TIRESTYPE</Attribute>
                 </Map>
                 <Map>
                         <Property>HAS-TRACK</Property>
-                        <Concept>WHEEL_TRACK_CASE</Concept>
+                        <Concept>TRACK</Concept>
                         <Attribute>TRACK</Attribute>
                 </Map>
                 <Map>
                         <Property>HAS-WEATHER</Property>
-                        <Concept>WHEEL_WEATHER_CASE</Concept>
+                        <Concept>WEATHER</Concept>
                         <Attribute>WEATHER</Attribute>
                 </Map>
         </DescriptionMappings>
@@ -41,7 +41,7 @@
         <SolutionMappings>
                 <Map>
                         <Property>HAS-RESULT</Property>
-                        <Concept>WHEEL_RESULT_CASE</Concept>
+                        <Concept>RESULT</Concept>
                         <Attribute>RESULT</Attribute>
                 </Map>
         </SolutionMappings>
