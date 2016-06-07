@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package coursework;
-
+import com.mysql.jdbc.Driver;
 import arq.query;
 import es.ucm.fdi.gaia.ontobridge.OntoBridge;
 import es.ucm.fdi.gaia.ontobridge.OntologyDocument;

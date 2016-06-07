@@ -1,353 +1,466 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#"
      xml:base="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22">
-    <Prefix name="" IRI="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <NamedIndividual IRI="#wet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#track"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TiresType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#trackCase"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CBR_CASE"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_Mark"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_carcassesType"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_track"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#pirrely"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#carcassesType"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_weather"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#lose"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#diagnal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Result"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MarkCase"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Params"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#pseslick"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_TiresType"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_result"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#dry"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#slick"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CBR_DESCRIPTION"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TiresTypeCase"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#vaz"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#kama"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#weatherCase"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#city"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#win"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#cases"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#carcassesTypeCase"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#redial"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#rainy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mark"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#case2005"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#avtodrom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CBR_INDEX"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#weather"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#case2003"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ResultCase"/>
-    </Declaration>
-    <EquivalentClasses>
-        <Class IRI="#MarkCase"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_Mark"/>
-            <Class IRI="#Mark"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ResultCase"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_result"/>
-            <Class IRI="#Result"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#TiresTypeCase"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_TiresType"/>
-            <Class IRI="#TiresType"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#carcassesTypeCase"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_carcassesType"/>
-            <Class IRI="#carcassesType"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#trackCase"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_track"/>
-            <Class IRI="#track"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#weatherCase"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_weather"/>
-            <Class IRI="#weather"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#Mark"/>
-        <Class IRI="#Params"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MarkCase"/>
-        <Class IRI="#cases"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Params"/>
-        <Class IRI="#CBR_INDEX"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Result"/>
-        <Class IRI="#CBR_INDEX"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ResultCase"/>
-        <Class IRI="#cases"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TiresType"/>
-        <Class IRI="#Params"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TiresTypeCase"/>
-        <Class IRI="#cases"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#carcassesType"/>
-        <Class IRI="#Params"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#carcassesTypeCase"/>
-        <Class IRI="#cases"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#track"/>
-        <Class IRI="#Params"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#trackCase"/>
-        <Class IRI="#cases"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#weather"/>
-        <Class IRI="#Params"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#weatherCase"/>
-        <Class IRI="#cases"/>
-    </SubClassOf>
-    <ClassAssertion>
-        <Class IRI="#track"/>
-        <NamedIndividual IRI="#avtodrom"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#cases"/>
-        <NamedIndividual IRI="#case2003"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#cases"/>
-        <NamedIndividual IRI="#case2005"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#track"/>
-        <NamedIndividual IRI="#city"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#carcassesType"/>
-        <NamedIndividual IRI="#diagnal"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#weather"/>
-        <NamedIndividual IRI="#dry"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Mark"/>
-        <NamedIndividual IRI="#kama"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Result"/>
-        <NamedIndividual IRI="#lose"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Mark"/>
-        <NamedIndividual IRI="#pirrely"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#TiresType"/>
-        <NamedIndividual IRI="#pseslick"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#TiresType"/>
-        <NamedIndividual IRI="#rainy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#carcassesType"/>
-        <NamedIndividual IRI="#redial"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#TiresType"/>
-        <NamedIndividual IRI="#slick"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Mark"/>
-        <NamedIndividual IRI="#vaz"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#weather"/>
-        <NamedIndividual IRI="#wet"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Result"/>
-        <NamedIndividual IRI="#win"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_Mark"/>
-        <NamedIndividual IRI="#case2003"/>
-        <NamedIndividual IRI="#vaz"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_TiresType"/>
-        <NamedIndividual IRI="#case2003"/>
-        <NamedIndividual IRI="#slick"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_carcassesType"/>
-        <NamedIndividual IRI="#case2003"/>
-        <NamedIndividual IRI="#diagnal"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_result"/>
-        <NamedIndividual IRI="#case2003"/>
-        <NamedIndividual IRI="#win"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_track"/>
-        <NamedIndividual IRI="#case2003"/>
-        <NamedIndividual IRI="#avtodrom"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_weather"/>
-        <NamedIndividual IRI="#case2003"/>
-        <NamedIndividual IRI="#dry"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_Mark"/>
-        <NamedIndividual IRI="#case2005"/>
-        <NamedIndividual IRI="#kama"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_TiresType"/>
-        <NamedIndividual IRI="#case2005"/>
-        <NamedIndividual IRI="#pseslick"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_carcassesType"/>
-        <NamedIndividual IRI="#case2005"/>
-        <NamedIndividual IRI="#diagnal"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_result"/>
-        <NamedIndividual IRI="#case2005"/>
-        <NamedIndividual IRI="#win"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_track"/>
-        <NamedIndividual IRI="#case2005"/>
-        <NamedIndividual IRI="#city"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_weather"/>
-        <NamedIndividual IRI="#case2005"/>
-        <NamedIndividual IRI="#wet"/>
-    </ObjectPropertyAssertion>
-</Ontology>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_DESCRIPTION"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CARCASSESTYPE_CASE"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_MARK_CASE"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_RESULT_CASE"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_TIRESTYPE_CASE"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_TRACK_CASE"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_WEATHER_CASE"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-CARCASSESTYPE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-CARCASSESTYPE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-DESCRIPTION -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-DESCRIPTION">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBRCASE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_DESCRIPTION"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-MARK -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-MARK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#MARK"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-RESULT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-RESULT">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RESULT"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-TIRESTYPE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-TIRESTYPE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TIRESTYPE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-TRACK -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-TRACK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TRACK"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-WEATHER -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-WEATHER">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WEATHER"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBRCASE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBRCASE"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_DESCRIPTION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_DESCRIPTION"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#MARK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#MARK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RESULT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RESULT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TIRESTYPE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TIRESTYPE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TRACK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TRACK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WEATHER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WEATHER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CARCASSESTYPE_CASE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CARCASSESTYPE_CASE">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBRCASE"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_DESCRIPTION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_MARK_CASE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_MARK_CASE">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#MARK"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_RESULT_CASE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_RESULT_CASE">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RESULT"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_TIRESTYPE_CASE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_TIRESTYPE_CASE">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TIRESTYPE"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_TRACK_CASE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_TRACK_CASE">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TRACK"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_WEATHER_CASE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_WEATHER_CASE">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#HAS-ATTRIBUTE"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WEATHER"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AVTODROM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AVTODROM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TRACK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CITY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TRACK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGNAL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGNAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DRY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DRY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WEATHER"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#KAMA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#KAMA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#MARK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#LOSE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#LOSE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PIRRELY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PIRRELY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#MARK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PSESLICK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PSESLICK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TIRESTYPE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RAINY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RAINY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TIRESTYPE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#REDIAL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#REDIAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#SLICK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#SLICK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TIRESTYPE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#VAZ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#VAZ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#MARK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WET -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WET">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WEATHER"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RESULT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#case2003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#case2003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGNAL"/>
+        <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#VAZ"/>
+        <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WIN"/>
+        <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#SLICK"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AVTODROM"/>
+        <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DRY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#case2005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#case2005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGNAL"/>
+        <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#KAMA"/>
+        <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WIN"/>
+        <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PSESLICK"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CITY"/>
+        <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WET"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
 
 
 

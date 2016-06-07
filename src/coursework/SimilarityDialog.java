@@ -136,24 +136,7 @@ public class SimilarityDialog extends JDialog {
                 panel.add(track = new SimilConfigPanel(stringfunctions));
                 panel.add(new JLabel("weather"));
                 panel.add(weather = new SimilConfigPanel(stringfunctions));
-		//panel.add(new JLabel("Number of persons"));
-		//panel.add(persons = new SimilConfigPanel(numberfunctions));
-		
-//		panel.add(new JLabel("Region"));
-//		panel.add(region = new SimilConfigPanel(ontofunctions));
-//		
-//		panel.add(new JLabel("Transportation"));
-//		panel.add(transportation = new SimilConfigPanel(stringfunctions));
-//		
-//		panel.add(new JLabel("Duration"));
-//		panel.add(duration = new SimilConfigPanel(numberfunctions));
-//		
-//		panel.add(new JLabel("Season"));
-//		panel.add(season = new SimilConfigPanel(enumfunctions));
-//		
-//		panel.add(new JLabel("Accommodation"));
-//		panel.add(accommodation = new SimilConfigPanel(enumfunctions));
-		
+
 		panel.add(new JLabel());
 		panel.add(new JLabel());
 

@@ -12,18 +12,18 @@ import jcolibri.cbrcore.Attribute;
  * @author Анастасия
  */
 public class InterfaceSolution implements jcolibri.cbrcore.CaseComponent {
-    private String Result;
+    private String RESULT;
     private String caseId;
     @Override
     public Attribute getIdAttribute() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public Object getResult() {
-        return Result;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return RESULT;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     void setResult(String text) {
-        Result = text;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        RESULT = text;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     void setId(String text) {

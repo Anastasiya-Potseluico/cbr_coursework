@@ -1,48 +1,48 @@
  <OntologyConfiguration>
         <MainOntology>
-             <URL>file:/home/vadim/cbr_coursework/build/classes/resources/ontology/test.owl</URL>
-            <LocalCopy>src/resources/ontology/test.owl</LocalCopy>
+            <URL></URL>
+            <LocalCopy>/home/vadim/cbr_coursework/src/resources/ontology/test.owl</LocalCopy>
         </MainOntology>   
         
         <!-- There are not subontologies -->
         
-        <CaseMainConcept>cases</CaseMainConcept>
+        <CaseMainConcept>WHEEL_CASE</CaseMainConcept>
         
         <DescriptionClassName>coursework.InterfaceDescription</DescriptionClassName>
         <DescriptionMappings>
                 <Map>
-                        <Property>has_carcassesType</Property>
-                        <Concept>carcassesTypeCase</Concept>
-                        <Attribute>carcassesType</Attribute>
+                        <Property>HAS-CARCASSESTYPE</Property>
+                        <Concept>WHEEL_CARCASSESTYPE_CASE</Concept>
+                        <Attribute>CARCASSESTYPE</Attribute>
                 </Map>
                 <Map>
-                        <Property>has_Mark</Property>
-                        <Concept>MarkCase</Concept>
-                        <Attribute>mark</Attribute>
+                        <Property>HAS-MARK</Property>
+                        <Concept>WHEEL_MARK_CASE</Concept>
+                        <Attribute>MARK</Attribute>
                 </Map>
                 <Map>
-                        <Property>has_TiresType</Property>
-                        <Concept>TiresTypeCase</Concept>
-                        <Attribute>TiresType</Attribute>
+                        <Property>HAS-TIRESTYPE</Property>
+                        <Concept>WHEEL_TIRESTYPE_CASE</Concept>
+                        <Attribute>TIRESTYPE</Attribute>
                 </Map>
                 <Map>
-                        <Property>has_track</Property>
-                        <Concept>trackCase</Concept>
-                        <Attribute>track</Attribute>
+                        <Property>HAS-TRACK</Property>
+                        <Concept>WHEEL_TRACK_CASE</Concept>
+                        <Attribute>TRACK</Attribute>
                 </Map>
                 <Map>
-                        <Property>has_weather</Property>
-                        <Concept>weatherCase</Concept>
-                        <Attribute>weather</Attribute>
+                        <Property>HAS-WEATHER</Property>
+                        <Concept>WHEEL_WEATHER_CASE</Concept>
+                        <Attribute>WEATHER</Attribute>
                 </Map>
         </DescriptionMappings>
         
         <SolutionClassName>coursework.InterfaceSolution</SolutionClassName>
         <SolutionMappings>
                 <Map>
-                        <Property>has_result</Property>
-                        <Concept>ResultCase</Concept>
-                        <Attribute>Result</Attribute>
+                        <Property>HAS-RESULT</Property>
+                        <Concept>WHEEL_RESULT_CASE</Concept>
+                        <Attribute>RESULT</Attribute>
                 </Map>
         </SolutionMappings>
  </OntologyConfiguration>
