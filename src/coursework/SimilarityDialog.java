@@ -74,9 +74,10 @@ public class SimilarityDialog extends JDialog {
 		    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e1)
 		{
+                    System.out.println(e1.toString());
 		}
 		
-		this.setTitle("Configure Similarity");
+		this.setTitle("Конфигурация мер близости");
 
 		
 		image = new JLabel();
@@ -111,30 +112,33 @@ public class SimilarityDialog extends JDialog {
 		panel.setLayout(new SpringLayout());
 		
 		JLabel label;
-		panel.add(label = new JLabel("Attribute"));
+		panel.add(label = new JLabel("Атрибут"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		JPanel l = new JPanel();
 		l.setLayout(new GridLayout(1,3));
-		l.add(label = new JLabel("Function"));
+		l.add(label = new JLabel("Функция"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
-		l.add(label = new JLabel("Weight"));
+		l.add(label = new JLabel("Вес"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
-		l.add(label = new JLabel("Function Param."));
+		l.add(label = new JLabel("Параметры функции"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		panel.add(l);
 		
 		//panel.add(new JLabel("HolidayType"));
 		//panel.add(holidayType = new SimilConfigPanel(stringfunctions));
-                panel.add(new JLabel("carcassesType"));
+                panel.add(new JLabel("Тип каркаса"));
                 panel.add(carcassesType = new SimilConfigPanel(stringfunctions));
 		
-                panel.add(new JLabel("Mark"));
-                panel.add(mark = new SimilConfigPanel(stringfunctions));
-                panel.add(new JLabel("TiresType"));
-                panel.add(TiresType = new SimilConfigPanel(stringfunctions));
-                panel.add(new JLabel("track"));
+                panel.add(new JLabel("Марка шин"));
+                panel.add(mark = new SimilConfigPanel(ontofunctions));
+               
+                panel.add(new JLabel("Тип шин"));
+                panel.add(TiresType = new SimilConfigPanel(ontofunctions));
+                
+                panel.add(new JLabel("Место гонки"));
                 panel.add(track = new SimilConfigPanel(stringfunctions));
-                panel.add(new JLabel("weather"));
+                
+                panel.add(new JLabel("Погода"));
                 panel.add(weather = new SimilConfigPanel(stringfunctions));
 
 		panel.add(new JLabel());
@@ -145,10 +149,10 @@ public class SimilarityDialog extends JDialog {
 		panel.add(new JSpinner(k = new SpinnerNumberModel(3,1,100,1)));
 
 //		Lay out the panel.
-//		Utils.makeCompactGrid(panel,
-//		                10, 2, //rows, cols
-//		                6, 6,        //initX, initY
-//		                20, 10);       //xPad, yPad
+		Utils.makeCompactGrid(panel,
+		                8, 2, //rows, cols
+		                6, 6,        //initX, initY
+		                20, 10);       //xPad, yPad
 		
 		JPanel panelAux = new JPanel();
 		panelAux.setLayout(new BorderLayout());
@@ -159,14 +163,14 @@ public class SimilarityDialog extends JDialog {
 		JPanel buttons = new JPanel();
 		buttons.setLayout(new BorderLayout());
 		
-		JButton ok = new JButton("Set Similarity Configuration >>");
+		JButton ok = new JButton("Установить конфигурацию мер близости >>");
 		ok.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				setSimilarity();
 			}
 		});
 		buttons.add(ok,BorderLayout.CENTER);
-		JButton exit = new JButton("Exit");
+		JButton exit = new JButton("Выход");
 		exit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				try {
