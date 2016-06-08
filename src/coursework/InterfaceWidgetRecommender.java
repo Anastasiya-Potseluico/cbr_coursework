@@ -161,6 +161,10 @@ public class InterfaceWidgetRecommender implements StandardCBRApplication {
             System.out.println(c);
 	return _caseBase;
     }
+    
+    public Connector getOntoConnector() {
+        return _dbConnector;
+    }
 
     /**
      * Выполняет CBR-цикл приложения с заданным запросом

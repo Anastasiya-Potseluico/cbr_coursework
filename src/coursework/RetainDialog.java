@@ -54,6 +54,8 @@ import javax.swing.SpringLayout;
 import javax.swing.UIManager;
 
 import jcolibri.cbrcore.CBRCase;
+import jcolibri.cbrcore.Connector;
+import jcolibri.connector.OntologyConnector;
 import jcolibri.datatypes.Instance;
 //import jcolibri.examples.TravelRecommender.TravelDescription;
 //import jcolibri.examples.TravelRecommender.TravelRecommender;
@@ -297,9 +299,11 @@ public class RetainDialog extends JDialog {
 		cases.remove(_case);
 		
 		InterfaceDescription desc = (InterfaceDescription) _case.getDescription();
-		desc.setWHEELCASE(Instance.createInstance(idEditor.getText(), "WHEEL_CASE"));
+                OntologyConnector connector = (OntologyConnector)InterfaceWidgetRecommender.getInstance().getOntoConnector();
+                Instance newId = Instance.createInstance("newInstance", connector.getCaseMainConcept());
+		desc.setCASEID(Instance.createInstance(idEditor.getText(), newId.toString()));
 		InterfaceSolution sol = (InterfaceSolution) _case.getSolution();
-		sol.setWheelCase(Instance.createInstance(idEditor.getText(),"id"));
+		sol.setId(Instance.createInstance(idEditor.getText(),"id"));
 		casesToRetain.add(_case);
 		
 		currentCase = 0;
