@@ -300,10 +300,10 @@ public class RetainDialog extends JDialog {
 		
 		InterfaceDescription desc = (InterfaceDescription) _case.getDescription();
                 OntologyConnector connector = (OntologyConnector)InterfaceWidgetRecommender.getInstance().getOntoConnector();
-                Instance newId = Instance.createInstance("newInstance", connector.getCaseMainConcept());
-		desc.setCASEID(Instance.createInstance(idEditor.getText(), newId.toString()));
+		desc.setCASEID(Instance.createInstance(idEditor.getText(), connector.getCaseMainConcept()));
 		InterfaceSolution sol = (InterfaceSolution) _case.getSolution();
-		sol.setId(Instance.createInstance(idEditor.getText(),"id"));
+                
+		sol.setId(Instance.createInstance(idEditor.getText(),connector.getCaseMainConcept()));
 		casesToRetain.add(_case);
 		
 		currentCase = 0;
