@@ -178,7 +178,7 @@ public class InterfaceWidgetRecommender implements StandardCBRApplication {
 		Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(_caseBase.getCases(), cbrq, simConfig);
 		
 		// Select k cases
-		//Collection<CBRCase> selectedcases = SelectCases.selectTopK(eval, _similarityDialog.getK());
+		Collection<CBRCase> selectedcases = SelectCases.selectTopK(eval, _similarityDialog.getK());
 		
 		// Show result
 		_resultDialog.showCases(eval, _caseBase.getCases());
@@ -188,31 +188,31 @@ public class InterfaceWidgetRecommender implements StandardCBRApplication {
 		_autoAdaptationDialog.setVisible(true);
 		
 		// !! Adapt depending on user selection
-//		if(_autoAdaptationDialog.adapt_Duration_Price())
-//		{
-//			// Compute a direct proportion between the "Duration" and "Price" attributes.
-//			NumericDirectProportionMethod.directProportion(	new Attribute("Duration",InterfaceDescription.class), 
-//				 new Attribute("price",InterfaceSolution.class), 
-//				 cbrq, selectedcases);
-//		}
+		if(_autoAdaptationDialog.adapt_Weather_Result())
+		{
+			// Compute a direct proportion between the "Weather" and "Result" attributes.
+			NumericDirectProportionMethod.directProportion(	new Attribute("WEATHER",InterfaceDescription.class), 
+				 new Attribute("RESULT",InterfaceSolution.class), 
+				 cbrq, selectedcases);
+		}
 		
-//		!!if(_autoAdaptationDialog.adapt_NumberOfPersons_Price())
-//		{
-//			// Compute a direct proportion between the "Duration" and "Price" attributes.
-//			NumericDirectProportionMethod.directProportion(	new Attribute("NumberOfPersons",InterfaceDescription.class), 
-//				 						new Attribute("price",InterfaceSolution.class), 
-//				 						cbrq, selectedcases);
-//		}
+		if(_autoAdaptationDialog.adapt_Tirestype_Result())
+		{
+			// Compute a direct proportion between the "Tires type" and "Result" attributes.
+			NumericDirectProportionMethod.directProportion(	new Attribute("TIRESTYPE",InterfaceDescription.class), 
+				 						new Attribute("RESULT",InterfaceSolution.class), 
+				 						cbrq, selectedcases);
+		}
 		
 		// Revise
-		//!!_revisionDialog.showCases(selectedcases);
+		_revisionDialog.showCases(selectedcases);
 		_revisionDialog.setVisible(true);
 		
 		// Retain
-		//!!_retainDialog.showCases(selectedcases, _caseBase.getCases().size());
+		_retainDialog.showCases(selectedcases, _caseBase.getCases().size());
 		_retainDialog.setVisible(true);
-		//!!Collection<CBRCase> casesToRetain = _retainDialog.getCasestoRetain();
-		//_caseBase.learnCases(casesToRetain);
+		Collection<CBRCase> casesToRetain = _retainDialog.getCasestoRetain();
+		_caseBase.learnCases(casesToRetain);
     }
 
     /**

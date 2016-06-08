@@ -86,27 +86,27 @@ class RevisionDialog extends JDialog {
 		panel.add(label = new JLabel());
 
 		
-		panel.add(new JLabel("carcassesType"));
-		String[] carcassesTypes = {"diagonal", "radial"};
+		panel.add(new JLabel("Тип каркаса"));
+		String[] carcassesTypes = {"DIAGONAL", "RADIAL"};
 		panel.add(carcassesType = new JComboBox(carcassesTypes));
                 
-                panel.add(new JLabel("mark"));
-		String[] marks = {"vaz", "kama","pirrely"};
+                panel.add(new JLabel("Марка шин"));
+		String[] marks = {"VAZ", "KAMA","PIRELLI"};
 		panel.add(mark = new JComboBox(marks));
                 
-                panel.add(new JLabel("TiresType"));
-		String[] TiresTypes = {"pseslick", "slick","rainy"};
+                panel.add(new JLabel("Тип шин"));
+		String[] TiresTypes = {"PSESLICK", "SLICK","RAINY"};
 		panel.add(TiresType = new JComboBox(TiresTypes));
                 
-                panel.add(new JLabel("track"));
-		String[] tracks = {"avtodrom", "city"};
+                panel.add(new JLabel("Место гонки"));
+		String[] tracks = {"AUTODROME", "CITY"};
 		panel.add(track = new JComboBox(tracks));
                 
-                panel.add(new JLabel("weather"));
-		String[] weathers = {"wet", "dry"};
+                panel.add(new JLabel("Погода"));
+		String[] weathers = {"WET", "DRY"};
 		panel.add(weather = new JComboBox(weathers));
 		
-		panel.add(label = new JLabel("Solution"));
+		panel.add(label = new JLabel("Решение"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		panel.add(label = new JLabel());
                 panel.add(new JLabel("Result"));
@@ -158,7 +158,7 @@ class RevisionDialog extends JDialog {
 		JPanel buttons = new JPanel();
 		buttons.setLayout(new BorderLayout());
 		
-		JButton ok = new JButton("Set Revisions >>");
+		JButton ok = new JButton("Применить изменения>>");
 		ok.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				saveCase();
@@ -166,7 +166,7 @@ class RevisionDialog extends JDialog {
 			}
 		});
 		buttons.add(ok,BorderLayout.CENTER);
-		JButton exit = new JButton("Exit");
+		JButton exit = new JButton("Выход");
 		exit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				try {
