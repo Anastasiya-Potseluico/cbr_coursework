@@ -93,23 +93,23 @@ public class QueryDialog extends JDialog {
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		
 		panel.add(new JLabel("Тип каркаса"));
-		String[] carcassesTypes = {"Diagonal", "Radial"};
+		String[] carcassesTypes = {"DIAGONAL", "RADIAL"};
 		panel.add(carcassesType = new JComboBox(carcassesTypes));
                 
                 panel.add(new JLabel("Марка шин"));
-		String[] marks = {"Vaz", "Kama","Pirrely"};
+		String[] marks = {"VAZ", "KAMA","PIRELLI"};
 		panel.add(mark = new JComboBox(marks));
                 
                 panel.add(new JLabel("Тип шин"));
-		String[] TiresTypes = {"Pseslick", "Slick", "Rainy"};
+		String[] TiresTypes = {"PSESLICK", "SLICK", "RAINY"};
 		panel.add(TiresType = new JComboBox(TiresTypes));
                 
                 panel.add(new JLabel("Место гонки"));
-		String[] tracks = {"Autodrome", "City"};
+		String[] tracks = {"AUTODROME", "CITY"};
 		panel.add(track = new JComboBox(tracks));
                 
                 panel.add(new JLabel("Погода"));
-		String[] weathers = {"Wet", "Dry"};
+		String[] weathers = {"WET", "DRY"};
 		panel.add(weather = new JComboBox(weathers));
                 
 		Utils.makeCompactGrid(panel,

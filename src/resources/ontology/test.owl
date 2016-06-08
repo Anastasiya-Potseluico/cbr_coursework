@@ -123,14 +123,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASESTYPE">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CBR_INDEX"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE">
@@ -332,9 +324,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AVTODROM -->
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AUTODROME -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AVTODROM">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AUTODROME">
         <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TRACK"/>
     </owl:NamedIndividual>
     
@@ -348,9 +340,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGNAL -->
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGONAL -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGNAL">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGONAL">
         <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE"/>
     </owl:NamedIndividual>
     
@@ -380,9 +372,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PIRRELY -->
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PIRELLI -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PIRRELY">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PIRELLI">
         <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#MARK"/>
     </owl:NamedIndividual>
     
@@ -396,18 +388,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RAINY -->
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RADIAL -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RAINY">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TIRESTYPE"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RADIAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#REDIAL -->
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RAINY -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#REDIAL">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CARCASSESTYPE"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RAINY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#TIRESTYPE"/>
     </owl:NamedIndividual>
     
 
@@ -448,11 +440,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#case2003">
         <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
-        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGNAL"/>
         <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#VAZ"/>
         <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WIN"/>
         <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#SLICK"/>
-        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AVTODROM"/>
         <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DRY"/>
     </owl:NamedIndividual>
     
@@ -462,7 +452,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#case2005">
         <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
-        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGNAL"/>
         <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#KAMA"/>
         <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WIN"/>
         <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PSESLICK"/>
