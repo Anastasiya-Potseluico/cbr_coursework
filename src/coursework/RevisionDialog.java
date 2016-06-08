@@ -62,6 +62,7 @@ class RevisionDialog extends JDialog {
 		    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e1)
 		{
+                    System.out.println(e1.toString());
 		}
 		
 		this.setTitle("Revise Cases");
@@ -80,7 +81,7 @@ class RevisionDialog extends JDialog {
 		
 		JLabel label;
 
-		panel.add(label = new JLabel("Description"));
+		panel.add(label = new JLabel("Описание"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		panel.add(label = new JLabel());
 
@@ -105,45 +106,17 @@ class RevisionDialog extends JDialog {
 		String[] weathers = {"wet", "dry"};
 		panel.add(weather = new JComboBox(weathers));
 		
-//		panel.add(new JLabel("Number of persons"));
-//		numberOfPersons = new SpinnerNumberModel(2,1,12,1); 
-//		panel.add(new JSpinner(numberOfPersons));
-//		
-//		panel.add(new JLabel("Region"));
-//		//String[] regions = {
-//		//		"AdriaticSea","Algarve","Allgaeu","Alps","Atlantic","Attica","Balaton","BalticSea","Bavaria","Belgium","BlackForest","Bornholm","Brittany","Bulgaria","Cairo","Carinthia","Chalkidiki","Corfu","Corsica","CostaBlanca","CostaBrava","CotedAzur","Crete","Czechia","Denmark","Egypt","England","ErzGebirge","Fano","France","Fuerteventura","GiantMountains","GranCanaria","Harz","Holland","Ibiza","Ireland","LakeGarda","Lolland","Madeira","Mallorca","Malta","Normandy","NorthSea","Poland","Rhodes","Riviera","SalzbergerLand","Scotland","Slowakei","Styria","Sweden","Teneriffe","Thuringia","Tunisia","TurkishAegeanSea","TurkishRiviera","Tyrol","Wales"};
-//		panel.add(region = new RegionSelector(this));
-//		
-//		panel.add(new JLabel("Transportation"));
-//		String[] transportations = {"Plane","Car","Coach","Train"};
-//		panel.add(transportation = new JComboBox(transportations));
-//		
-//		panel.add(new JLabel("Duration"));
-//		duration = new SpinnerNumberModel(7,2,31,1); 
-//		panel.add(new JSpinner(duration));
-//		
-//		panel.add(new JLabel("Season"));
-//		String[] seasons = {"January","February","March","April","May","June","July","August","September","October","November","December"};
-//		panel.add(season = new JComboBox(seasons));
-//		
-//		panel.add(new JLabel("Accommodation"));
-//		String[] accommodations = {"FiveStars","FourStars","HolidayFlat","ThreeStars","TwoStars","OneStar"};
-//		panel.add(accommodation = new JComboBox(accommodations));
-		
 		panel.add(label = new JLabel("Solution"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		panel.add(label = new JLabel());
                 panel.add(new JLabel("Result"));
                 panel.add(Result = new JTextField());
-
 		
-//		panel.add(new JLabel("Price"));
-//		price = new SpinnerNumberModel(); 
-//		panel.add(new JSpinner(price));
-//		
-//		panel.add(new JLabel("Hotel"));
-//		panel.add(hotel = new JTextField());
-		
+                Utils.makeCompactGrid(panel,
+		                8, 2, //rows, cols
+		                6, 6,        //initX, initY
+		                30, 10);       //xPad, yPad
+                
 //		Lay out the panel.
 		JPanel casesPanel = new JPanel();
 		casesPanel.setLayout(new BorderLayout());

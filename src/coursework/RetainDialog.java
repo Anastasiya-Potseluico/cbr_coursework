@@ -102,6 +102,7 @@ public class RetainDialog extends JDialog {
 		    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e1)
 		{
+                    System.out.println(e1.toString());
 		}
 		
 		this.setTitle("Revise cases");

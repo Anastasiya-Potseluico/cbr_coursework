@@ -66,9 +66,10 @@ public class ResultDialog extends JDialog {
 		    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e1)
 		{
+                    System.out.println(e1.toString());
 		}
 		
-		this.setTitle("Retrived cases");
+		this.setTitle("Извлеченные решения");
 
 		
 		image = new JLabel();
@@ -84,31 +85,31 @@ public class ResultDialog extends JDialog {
 		
 		JLabel label;
 
-		panel.add(label = new JLabel("Description"));
+		panel.add(label = new JLabel("Описание"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		panel.add(label = new JLabel());
 		
-		panel.add(new JLabel("carcassesType"));
+		panel.add(new JLabel("Тип каркаса"));
 		panel.add(carcassesType = new JLabel(""));
 		
-		panel.add(new JLabel("mark"));
+		panel.add(new JLabel("Марка шин"));
 		panel.add(this.mark = new JLabel());
 		
-		panel.add(new JLabel("TiresType"));
+		panel.add(new JLabel("Тип шин"));
 		panel.add(this.TiresType = new JLabel());
 		
-		panel.add(new JLabel("track"));
+		panel.add(new JLabel("Место гонки"));
 		panel.add(this.track = new JLabel());
 		
-		panel.add(new JLabel("weather"));
+		panel.add(new JLabel("Погода"));
 		panel.add(this.weather = new JLabel());
 		
-		panel.add(label = new JLabel("Solution"));
+		panel.add(label = new JLabel("Решение"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		panel.add(label = new JLabel());
 
 		
-		panel.add(new JLabel("Result"));
+		panel.add(new JLabel("Результат"));
 		panel.add(Result = new JLabel());
 				
 		JPanel casesPanel = new JPanel();
@@ -149,14 +150,14 @@ public class ResultDialog extends JDialog {
 		JPanel buttons = new JPanel();
 		buttons.setLayout(new BorderLayout());
 		
-		JButton ok = new JButton("Next >>");
+		JButton ok = new JButton("Далее >>");
 		ok.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				next();
 			}
 		});
 		buttons.add(ok,BorderLayout.CENTER);
-		JButton exit = new JButton("Exit");
+		JButton exit = new JButton("Выход");
 		exit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -227,7 +228,7 @@ public class ResultDialog extends JDialog {
 	public static void main(String[] args) {
 		ResultDialog qf = new ResultDialog(null);
 		qf.setVisible(true);
-		System.out.println("Bye");
+		System.out.println("Завершение работы");
 	}
 
 	

@@ -40,8 +40,8 @@ public class AutoAdaptationDialog extends JDialog {
 
 	JLabel image;
 	
-	JCheckBox np_price;
-	JCheckBox duration_price;
+	JCheckBox weather_result;
+	JCheckBox tirestype_result;
 	
 	
 	ArrayList<RetrievalResult> cases;
@@ -62,9 +62,10 @@ public class AutoAdaptationDialog extends JDialog {
 		    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e1)
 		{
+                    System.out.println(e1.toString());
 		}
 		
-		this.setTitle("Adaptation");
+		this.setTitle("Адаптация решения");
 
 		
 		image = new JLabel();
@@ -77,8 +78,8 @@ public class AutoAdaptationDialog extends JDialog {
 		JPanel panel = new JPanel();
 		panel.setLayout(new SpringLayout());
 		
-		panel.add( np_price = new JCheckBox("Direct proportion between \"Number of Persons\" and \"Price"));
-		panel.add( duration_price = new JCheckBox("Direct proportion between \"Duration\" and \"Price"));
+		panel.add( weather_result = new JCheckBox("Пропорция между\"Погода\" и \"Результат"));
+		panel.add( tirestype_result = new JCheckBox("Пропорция между \"Тип шин\" and \"Результат"));
 		
 		Utils.makeCompactGrid(panel,
                 2, 1, //rows, cols
@@ -136,14 +137,14 @@ public class AutoAdaptationDialog extends JDialog {
 	}
 	
 	
-	public boolean adapt_NumberOfPersons_Price()
+	public boolean adapt_Weather_Result()
 	{
-		return this.np_price.isSelected();
+		return this.weather_result.isSelected();
 	}
 
-	public boolean adapt_Duration_Price()
+	public boolean adapt_Tirestype_Result()
 	{
-		return this.duration_price.isSelected();
+		return this.tirestype_result.isSelected();
 	}
 	
 	

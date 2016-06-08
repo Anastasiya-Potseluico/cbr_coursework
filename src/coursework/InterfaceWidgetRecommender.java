@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package coursework;
-import com.mysql.jdbc.Driver;
 import arq.query;
 import es.ucm.fdi.gaia.ontobridge.OntoBridge;
 import es.ucm.fdi.gaia.ontobridge.OntologyDocument;
@@ -133,6 +132,7 @@ public class InterfaceWidgetRecommender implements StandardCBRApplication {
             _dbConnector = new OntologyConnector();
             _dbConnector.initFromXMLfile(url);
             _caseBase = new LinealCaseBase();
+            ontoBridge = new OntoBridge();
             // Создать диалоги
             _similarityDialog = new SimilarityDialog(_mainFrame);
             _resultDialog = new ResultDialog(_mainFrame);
