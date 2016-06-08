@@ -14,7 +14,7 @@ import jcolibri.datatypes.Instance;
  */
 public class InterfaceSolution implements jcolibri.cbrcore.CaseComponent {
     public Instance RESULT;
-    public Instance id;
+    public Instance WHEEL_CASE;
     @Override
     public Attribute getIdAttribute() {
         return new Attribute("id", this.getClass());
@@ -27,14 +27,14 @@ public class InterfaceSolution implements jcolibri.cbrcore.CaseComponent {
         RESULT = result;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void setId(Instance id) {
-        this.id = id;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setWheelCase(Instance wheelCase) {
+        this.WHEEL_CASE = wheelCase;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    public Instance getId() {
-        return id;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Instance getWheelCase() {
+        return WHEEL_CASE;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public String toString() {
-        return "("+ id + ";"+ RESULT + ")";
+        return "("+ WHEEL_CASE + ";"+ RESULT + ")";
     }
     
 }

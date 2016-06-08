@@ -121,33 +121,38 @@ public class RetainDialog extends JDialog {
 		
 		JLabel label;
 
-		panel.add(label = new JLabel("Description"));
+		panel.add(label = new JLabel("Описание"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		panel.add(label = new JLabel());
 		
-		panel.add(new JLabel("carcassesType"));
+		panel.add(new JLabel("Тип каркаса"));
 		panel.add(carcassesType = new JLabel(""));
 		
-		panel.add(new JLabel("mark"));
+		panel.add(new JLabel("Марка шин"));
 		panel.add(this.mark = new JLabel());
 		
-		panel.add(new JLabel("TiresType"));
+		panel.add(new JLabel("Тип шин"));
 		panel.add(this.TiresType = new JLabel());
 		
-		panel.add(new JLabel("track"));
+		panel.add(new JLabel("Место гонки"));
 		panel.add(this.track = new JLabel());
 		
-		panel.add(new JLabel("weather"));
+		panel.add(new JLabel("Погода"));
 		panel.add(this.weather = new JLabel());
 		
-		panel.add(label = new JLabel("Solution"));
+		panel.add(label = new JLabel("Решение"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		panel.add(label = new JLabel());
 
 		
-		panel.add(new JLabel("Result"));
+		panel.add(new JLabel("Результат"));
 		panel.add(Result = new JLabel());
 		
+                Utils.makeCompactGrid(panel,
+		                8, 2, //rows, cols
+		                6, 6,        //initX, initY
+		                30, 10); 
+                
 //		Lay out the panel.
 		JPanel casesPanel = new JPanel();
 		casesPanel.setLayout(new BorderLayout());
@@ -179,7 +184,7 @@ public class RetainDialog extends JDialog {
 		
 		
 		JPanel defineIdsPanel = new JPanel();
-		saveCheck = new JCheckBox("Save Case with new Id:");
+		saveCheck = new JCheckBox("Сохранить Case с новым Id:");
 		defineIdsPanel.add(saveCheck);
 		saveCheck.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
@@ -188,7 +193,7 @@ public class RetainDialog extends JDialog {
 		});
 		idEditor = new JTextField(20);
 		defineIdsPanel.add(idEditor);
-		setId = new JButton("Apply");
+		setId = new JButton("Применить");
 		defineIdsPanel.add(setId);
 		
 		setId.addActionListener(new ActionListener(){
@@ -209,14 +214,14 @@ public class RetainDialog extends JDialog {
 		JPanel buttons = new JPanel();
 		buttons.setLayout(new BorderLayout());
 		
-		JButton ok = new JButton("Next >>");
+		JButton ok = new JButton("Далее >>");
 		ok.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				next();
 			}
 		});
 		buttons.add(ok,BorderLayout.CENTER);
-		JButton exit = new JButton("Exit");
+		JButton exit = new JButton("Выход");
 		exit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -263,7 +268,7 @@ public class RetainDialog extends JDialog {
 		currentCase = 0;
 		if(numcases<casebasesize)
 			numcases = casebasesize+1;
-		idEditor.setText("Journey"+(++numcases));
+		idEditor.setText("Racing"+(++numcases));
 		showCase();
 	}
 	
@@ -292,13 +297,13 @@ public class RetainDialog extends JDialog {
 		cases.remove(_case);
 		
 		InterfaceDescription desc = (InterfaceDescription) _case.getDescription();
-		desc.setCASEID(Instance.createInstance(idEditor.getText(),"CASEID"));
+		desc.setWHEELCASE(Instance.createInstance(idEditor.getText(), "WHEEL_CASE"));
 		InterfaceSolution sol = (InterfaceSolution) _case.getSolution();
-		sol.setId(Instance.createInstance(idEditor.getText(),"id"));
+		sol.setWheelCase(Instance.createInstance(idEditor.getText(),"id"));
 		casesToRetain.add(_case);
 		
 		currentCase = 0;
-		idEditor.setText("Journey"+(++numcases));
+		idEditor.setText("Racing"+(++numcases));
 		saveCheck.setSelected(false);
 		enableSaveCase();
 		showCase();

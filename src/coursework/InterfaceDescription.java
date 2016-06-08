@@ -17,14 +17,14 @@ public class InterfaceDescription implements jcolibri.cbrcore.CaseComponent {
     public Instance TRACK;
     public Instance WEATHER;
     public Instance TIRESTYPE;
-    public Instance CASEID;
+    public Instance WHEEL_CASE;
     
     @Override
     public Attribute getIdAttribute() {
-        return new Attribute("CASEID", this.getClass());
+        return new Attribute("WHEEL_CASE", this.getClass());
     }
-    public Instance getCASEID() {
-        return CASEID;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Instance getWHEELCASE() {
+        return WHEEL_CASE;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public Instance getCARCASSESTYPE() {
         return CARCASSESTYPE;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -65,11 +65,11 @@ public class InterfaceDescription implements jcolibri.cbrcore.CaseComponent {
         TRACK = track;//throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void setCASEID(Instance caseid) {
-        CASEID = caseid;// throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setWHEELCASE(Instance wheelCase) {
+        WHEEL_CASE = wheelCase;// throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public String toString() {
-        return "("+ CASEID + ";"+ TRACK + ";"+ MARK + ";"+ TIRESTYPE + ";"+ CARCASSESTYPE + ";"+ WEATHER + ")";
+        return "("+ WHEEL_CASE + ";"+ TRACK + ";"+ MARK + ";"+ TIRESTYPE + ";"+ CARCASSESTYPE + ";"+ WEATHER + ")";
     }
     
 }
