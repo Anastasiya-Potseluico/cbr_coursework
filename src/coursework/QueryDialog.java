@@ -69,6 +69,7 @@ public class QueryDialog extends JDialog {
 		    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e1)
 		{
+                    System.out.println(e1.toString());
 		}
 		
 		this.setTitle("Configure Query");
@@ -86,31 +87,35 @@ public class QueryDialog extends JDialog {
 		panel.setLayout(new SpringLayout());
 		
 		JLabel label;
-		panel.add(label = new JLabel("Attribute"));
+		panel.add(label = new JLabel("Атрибут"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
-		panel.add(label = new JLabel("Value"));
+		panel.add(label = new JLabel("Значение"));
 		label.setFont(label.getFont().deriveFont(Font.BOLD));
 		
-		panel.add(new JLabel("carcassesType"));
-		String[] carcassesTypes = {"diagonal", "radial"};
+		panel.add(new JLabel("Тип каркаса"));
+		String[] carcassesTypes = {"Diagonal", "Radial"};
 		panel.add(carcassesType = new JComboBox(carcassesTypes));
                 
-                panel.add(new JLabel("mark"));
-		String[] marks = {"vaz", "kama","pirrely"};
+                panel.add(new JLabel("Марка шин"));
+		String[] marks = {"Vaz", "Kama","Pirrely"};
 		panel.add(mark = new JComboBox(marks));
                 
-                panel.add(new JLabel("TiresType"));
-		String[] TiresTypes = {"pseslick", "slick","rainy"};
+                panel.add(new JLabel("Тип шин"));
+		String[] TiresTypes = {"Pseslick", "Slick", "Rainy"};
 		panel.add(TiresType = new JComboBox(TiresTypes));
                 
-                panel.add(new JLabel("track"));
-		String[] tracks = {"avtodrom", "city"};
+                panel.add(new JLabel("Место гонки"));
+		String[] tracks = {"Autodrome", "City"};
 		panel.add(track = new JComboBox(tracks));
                 
-                panel.add(new JLabel("weather"));
-		String[] weathers = {"wet", "dry"};
+                panel.add(new JLabel("Погода"));
+		String[] weathers = {"Wet", "Dry"};
 		panel.add(weather = new JComboBox(weathers));
-		
+                
+		Utils.makeCompactGrid(panel,
+		                6, 2, //rows, cols
+		                6, 6,        //initX, initY
+		                10, 10);       //xPad, yPad
 		
 //		Lay out the panel.
 		JPanel panelAux = new JPanel();
@@ -122,14 +127,14 @@ public class QueryDialog extends JDialog {
 		JPanel buttons = new JPanel();
 		buttons.setLayout(new BorderLayout());
 		
-		JButton ok = new JButton("Set Query >>");
+		JButton ok = new JButton("Выполнить запрос >>");
 		ok.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				setQuery();
 			}
 		});
 		buttons.add(ok,BorderLayout.CENTER);
-		JButton exit = new JButton("Exit");
+		JButton exit = new JButton("Выход");
 		exit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				try {
