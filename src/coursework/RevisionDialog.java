@@ -234,12 +234,12 @@ class RevisionDialog extends JDialog {
 		
 		desc.setMARK(Instance.createInstance((String)this.mark.getSelectedItem(), "MARK"));
                 desc.setCARCASSESTYPE(Instance.createInstance((String)this.carcassesType.getSelectedItem(), "CARCASSESTYPE"));
-                desc.setTIRESTYPE(Instance.createInstance((String)this.TiresType.getSelectedItem(), "TIRSTYPE"));
+                desc.setTIRESTYPE(Instance.createInstance((String)this.TiresType.getSelectedItem(), "TIRESTYPE"));
                 desc.setTRACK(Instance.createInstance((String)this.track.getSelectedItem(), "TRACK"));
                 desc.setWEATHER(Instance.createInstance((String)this.weather.getSelectedItem(), "WEATHER"));
 		
 		InterfaceSolution sol = (InterfaceSolution) _case.getSolution();
-		sol.setRESULT(Instance.createInstance(_case.getID().toString(), "RESULT"));
+		sol.setRESULT(Instance.createInstance(sol.getRESULT().toString(), "RESULT"));
 	}
 	
 	/**
