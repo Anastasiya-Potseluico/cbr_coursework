@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#"
      xml:base="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -404,6 +405,36 @@
     
 
 
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#Racing4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#Racing4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGONAL"/>
+        <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#VAZ"/>
+        <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WIN"/>
+        <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PSESLICK"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AUTODROME"/>
+        <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WET"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#Racing6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#Racing6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGONAL"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RADIAL"/>
+        <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#VAZ"/>
+        <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WIN"/>
+        <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#SLICK"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AUTODROME"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CITY"/>
+        <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DRY"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#SLICK -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#SLICK">
@@ -461,9 +492,93 @@
         <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CITY"/>
         <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WET"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#case2006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#case2006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RADIAL"/>
+        <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#KAMA"/>
+        <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#LOSE"/>
+        <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RAINY"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CITY"/>
+        <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WET"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#racing2001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#racing2001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGONAL"/>
+        <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#VAZ"/>
+        <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#LOSE"/>
+        <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PSESLICK"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AUTODROME"/>
+        <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DRY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#racing2002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#racing2002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RADIAL"/>
+        <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PIRELLI"/>
+        <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WIN"/>
+        <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RAINY"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CITY"/>
+        <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WET"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#racing2004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#racing2004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGONAL"/>
+        <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#KAMA"/>
+        <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#LOSE"/>
+        <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#SLICK"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AUTODROME"/>
+        <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DRY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#racing2007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#racing2007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RADIAL"/>
+        <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PIRELLI"/>
+        <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WIN"/>
+        <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#PSESLICK"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#CITY"/>
+        <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WET"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#racing2009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#racing2009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#WHEEL_CASE"/>
+        <HAS-CARCASSESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DIAGONAL"/>
+        <HAS-MARK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#VAZ"/>
+        <HAS-RESULT rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#LOSE"/>
+        <HAS-TIRESTYPE rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#RAINY"/>
+        <HAS-TRACK rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#AUTODROME"/>
+        <HAS-WEATHER rdf:resource="http://www.semanticweb.org/vadim/ontologies/2016/5/untitled-ontology-22#DRY"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
 
